@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { IUtils } from '@date-io/core/IUtils';
-  import { openView } from '../YearPicker/YearPickerStore';
+  import type { IUtils } from "@date-io/core/IUtils";
+  import { openView } from "../YearPicker/YearPickerStore";
 
   // TODO: move to shared constants file
-  const defaultMinDate = new Date('1900-01-01');
-  const defaultMaxDate = new Date('2099-12-31');
+  const defaultMinDate = new Date("1900-01-01");
+  const defaultMaxDate = new Date("2099-12-31");
 
   export let dateAdapter: IUtils<Date>;
   export let currentMonth: Date;
@@ -14,10 +14,10 @@
   export let selectNextMonth: () => void;
 
   function toggleYearPicker() {
-    if ($openView === 'days') {
-      openView.setOpenView('year');
-    } else if ($openView === 'year') {
-      openView.setOpenView('days');
+    if ($openView === "days") {
+      openView.setOpenView("year");
+    } else if ($openView === "year") {
+      openView.setOpenView("days");
     }
   }
 
@@ -27,11 +27,19 @@
 
 <div class="calendar-header">
   <div class="year-switcher-wrapper">
-    <span aria-live="polite" class="year-switcher-label"
-      >{dateAdapter.format(currentMonth, 'month')}</span
+    <time
+      datetime={dateAdapter.format(currentMonth, "fullDate")}
+      data-testid="selected-month"
+      aria-live="polite"
+      class="year-switcher-label"
+      >{dateAdapter.format(currentMonth, "month")}</time
     >
-    <span aria-live="polite" class="year-switcher-label"
-      >{dateAdapter.format(currentMonth, 'year')}</span
+    <time
+      datetime={dateAdapter.format(currentMonth, "fullDate")}
+      data-testid="selected-year"
+      aria-live="polite"
+      class="year-switcher-label"
+      >{dateAdapter.format(currentMonth, "year")}</time
     >
     <button class="month-switcher" type="button" on:click={toggleYearPicker}>
       <span class="month-switcher-label">
@@ -49,6 +57,7 @@
     <button
       disabled={shouldDisableMinDate}
       class="month-switcher previous-month"
+      aria-label="previous month"
       on:click={selectPreviousMonth}
     >
       <span class="month-switcher-label">
@@ -66,6 +75,7 @@
     </button>
     <button
       disabled={shouldDisableMaxDate}
+      aria-label="next month"
       class="month-switcher next-month"
       on:click={selectNextMonth}
     >
