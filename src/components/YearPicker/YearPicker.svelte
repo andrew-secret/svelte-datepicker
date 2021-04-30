@@ -67,8 +67,10 @@
       year.classList.contains('selected')
     );
 
-    (selectedYear[0] as HTMLElement).scrollIntoView();
-    (selectedYear[0] as HTMLElement).focus();
+    if (selectedYear[0]) {
+      (selectedYear[0] as HTMLElement).scrollIntoView();
+      (selectedYear[0] as HTMLElement).focus();
+    }
   });
 
   function handleSelectClass(currentMonth: Date, date: Date): boolean {
@@ -84,6 +86,7 @@
       class="year-button"
       class:selected={handleSelectClass(currentMonth, year)}
       type="button"
+      aria-pressed={handleSelectClass(currentMonth, year)}
       arial-label={year}
       on:focus={() => handleYearFocus(dateAdapter.getYear(year))}
       on:keydown={(event) => handleKeyDown(event, year)}
