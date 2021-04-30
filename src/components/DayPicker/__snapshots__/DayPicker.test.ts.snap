@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DayPicker should render component 1`] = `
+<body>
+  <div>
+    <div
+      class="weekdays svelte-bdh7zw"
+    >
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Su"
+      >
+        Su
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Mo"
+      >
+        Mo
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Tu"
+      >
+        Tu
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="We"
+      >
+        We
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Th"
+      >
+        Th
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Fr"
+      >
+        Fr
+         
+      </span>
+      <span
+        class="weekday-label svelte-bdh7zw"
+        title="Sa"
+      >
+        Sa
+         
+      </span>
+    </div>
+     
+    <div
+      role="grid"
+    >
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="true"
+          aria-label="Sun Dec 27 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          27
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Mon Dec 28 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          28
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Tue Dec 29 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          29
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Wed Dec 30 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          30
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Thu Dec 31 2020 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          31
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Fri Jan 01 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          1
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Sat Jan 02 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          2
+        </button>
+         
+      </div>
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Sun Jan 03 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          3
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Mon Jan 04 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          autofocus=""
+          class="day svelte-bdh7zw selected"
+          data-testid="visible-day"
+          role="cell"
+        >
+          4
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Tue Jan 05 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          5
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Wed Jan 06 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          6
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Thu Jan 07 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          7
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Fri Jan 08 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          8
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Sat Jan 09 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          9
+        </button>
+         
+      </div>
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Sun Jan 10 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          10
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Mon Jan 11 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          11
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Tue Jan 12 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          12
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Wed Jan 13 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          13
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Thu Jan 14 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          14
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Fri Jan 15 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          15
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Sat Jan 16 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          16
+        </button>
+         
+      </div>
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Sun Jan 17 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          17
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Mon Jan 18 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          18
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Tue Jan 19 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          19
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Wed Jan 20 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          20
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Thu Jan 21 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          21
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Fri Jan 22 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          22
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Sat Jan 23 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          23
+        </button>
+         
+      </div>
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Sun Jan 24 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          24
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Mon Jan 25 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          25
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Tue Jan 26 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          26
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Wed Jan 27 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          27
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Thu Jan 28 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          28
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Fri Jan 29 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          29
+        </button>
+        <button
+          aria-hidden="false"
+          aria-label="Sat Jan 30 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          30
+        </button>
+         
+      </div>
+      <div
+        class="week svelte-bdh7zw"
+        role="row"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Sun Jan 31 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw"
+          data-testid="visible-day"
+          role="cell"
+        >
+          31
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Mon Feb 01 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          1
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Tue Feb 02 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          2
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Wed Feb 03 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          3
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Thu Feb 04 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          4
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Fri Feb 05 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          5
+        </button>
+        <button
+          aria-hidden="true"
+          aria-label="Sat Feb 06 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+          class="day svelte-bdh7zw outside-of-current-month"
+          data-testid="hidden-day"
+          role="cell"
+        >
+          6
+        </button>
+         
+      </div>
+    </div>
+  </div>
+</body>
+`;

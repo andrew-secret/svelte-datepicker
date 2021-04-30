@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { IUtils } from '@date-io/core/IUtils';
+  import type { IUtils } from "@date-io/core/IUtils";
   export let dateAdapter: IUtils<Date>;
   export let fullMonth: Date[][];
   export let selectedDates: Date[];
@@ -8,19 +8,11 @@
   export let onDaySelect: (day: Date) => void;
   export let handleKeyDown: (event: Event, date: Date) => Promise<void>;
   export let handleFocus: (focusedDay: Date) => void;
-
-  export let minDate;
-  export let maxDate;
 </script>
 
 <div class="weekdays">
   {#each dateAdapter.getWeekdays() as day}
-    <span
-      class="weekday-label"
-      aria-hidden="true"
-      aria-labelledby={day}
-      title={day}
-    >
+    <span class="weekday-label" title={day}>
       {day}
     </span>
   {/each}
@@ -32,14 +24,13 @@
       {#each week as day, i}
         <!-- svelte-ignore a11y-autofocus  -->
         <button
-          disabled={dateAdapter.isSameMonth(
-            day,
-            dateAdapter.getPreviousMonth(minDate)
-          )}
           aria-hidden={dateAdapter.getMonth(day) !== currentMonthNumber}
           aria-label={day}
           role="cell"
           class="day"
+          data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
+            ? "hidden-day"
+            : "visible-day"}
           class:today={dateAdapter.isSameDay(day, dateAdapter.date())}
           class:selected={selectedDates.some(
             (selectedDate) =>
@@ -55,7 +46,7 @@
           autofocus={focusedDay !== null &&
             dateAdapter.isSameDay(day, focusedDay)}
         >
-          {dateAdapter.format(day, 'dayOfMonth')}
+          {dateAdapter.format(day, "dayOfMonth")}
         </button>
       {/each}
     </div>
@@ -92,7 +83,7 @@
     height: 36px;
     padding: 0;
     font-size: 0.75rem;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.66;
     border-radius: 50%;
