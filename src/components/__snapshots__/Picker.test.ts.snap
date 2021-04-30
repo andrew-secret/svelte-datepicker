@@ -1,0 +1,516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picker should render w/ daypicker 1`] = `
+<body>
+  <div>
+    <h1>
+      Date: 
+      Fri Apr 30 2021 02:00:00 GMT+0200 (Central European Summer Time)
+      !
+    </h1>
+     
+    <div
+      class="date-picker svelte-1jmgq4v"
+    >
+      <div
+        class="calendar-header svelte-jn3mp9"
+      >
+        <div
+          class="year-switcher-wrapper"
+        >
+          <time
+            aria-live="polite"
+            class="year-switcher-label"
+            data-testid="selected-month"
+            datetime="Apr 1, 2021"
+          >
+            April
+          </time>
+           
+          <time
+            aria-live="polite"
+            class="year-switcher-label"
+            data-testid="selected-year"
+            datetime="Apr 1, 2021"
+          >
+            2021
+          </time>
+           
+          <button
+            class="month-switcher svelte-jn3mp9"
+            type="button"
+          >
+            <span
+              class="month-switcher-label svelte-jn3mp9"
+            >
+              <svg
+                aria-hidden="true"
+                class="caret"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+         
+        <div
+          class="month-switcher-wrapper"
+        >
+          <button
+            aria-label="previous month"
+            class="month-switcher previous-month svelte-jn3mp9"
+          >
+            <span
+              class="month-switcher-label svelte-jn3mp9"
+            >
+              <svg
+                aria-hidden="true"
+                data-testid="ArrowLeftIcon"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                />
+              </svg>
+            </span>
+          </button>
+           
+          <button
+            aria-label="next month"
+            class="month-switcher next-month svelte-jn3mp9"
+          >
+            <span
+              class="month-switcher-label svelte-jn3mp9"
+            >
+              <svg
+                aria-hidden="true"
+                data-testid="ArrowRightIcon"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+       
+       
+      <div
+        class="weekdays svelte-bdh7zw"
+      >
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Su"
+        >
+          Su
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Mo"
+        >
+          Mo
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Tu"
+        >
+          Tu
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="We"
+        >
+          We
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Th"
+        >
+          Th
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Fr"
+        >
+          Fr
+           
+        </span>
+        <span
+          class="weekday-label svelte-bdh7zw"
+          title="Sa"
+        >
+          Sa
+           
+        </span>
+      </div>
+       
+      <div
+        role="grid"
+      >
+        <div
+          class="week svelte-bdh7zw"
+          role="row"
+        >
+          <button
+            aria-hidden="true"
+            aria-label="Sun Mar 28 2021 00:00:00 GMT+0100 (Central European Standard Time)"
+            class="day svelte-bdh7zw outside-of-current-month"
+            data-testid="hidden-day"
+            role="cell"
+          >
+            28
+          </button>
+          <button
+            aria-hidden="true"
+            aria-label="Mon Mar 29 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw outside-of-current-month"
+            data-testid="hidden-day"
+            role="cell"
+          >
+            29
+          </button>
+          <button
+            aria-hidden="true"
+            aria-label="Tue Mar 30 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw outside-of-current-month"
+            data-testid="hidden-day"
+            role="cell"
+          >
+            30
+          </button>
+          <button
+            aria-hidden="true"
+            aria-label="Wed Mar 31 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw outside-of-current-month"
+            data-testid="hidden-day"
+            role="cell"
+          >
+            31
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Thu Apr 01 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            1
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Fri Apr 02 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            2
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Apr 03 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            3
+          </button>
+           
+        </div>
+        <div
+          class="week svelte-bdh7zw"
+          role="row"
+        >
+          <button
+            aria-hidden="false"
+            aria-label="Sun Apr 04 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            4
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Mon Apr 05 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            5
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Tue Apr 06 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            6
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Wed Apr 07 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            7
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Thu Apr 08 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            8
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Fri Apr 09 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            9
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Apr 10 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            10
+          </button>
+           
+        </div>
+        <div
+          class="week svelte-bdh7zw"
+          role="row"
+        >
+          <button
+            aria-hidden="false"
+            aria-label="Sun Apr 11 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            11
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Mon Apr 12 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            12
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Tue Apr 13 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            13
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Wed Apr 14 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            14
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Thu Apr 15 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            15
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Fri Apr 16 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            16
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Apr 17 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            17
+          </button>
+           
+        </div>
+        <div
+          class="week svelte-bdh7zw"
+          role="row"
+        >
+          <button
+            aria-hidden="false"
+            aria-label="Sun Apr 18 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            18
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Mon Apr 19 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            19
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Tue Apr 20 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            20
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Wed Apr 21 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            21
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Thu Apr 22 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            22
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Fri Apr 23 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            23
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Apr 24 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            24
+          </button>
+           
+        </div>
+        <div
+          class="week svelte-bdh7zw"
+          role="row"
+        >
+          <button
+            aria-hidden="false"
+            aria-label="Sun Apr 25 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            25
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Mon Apr 26 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            26
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Tue Apr 27 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            27
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Wed Apr 28 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            28
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Thu Apr 29 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw"
+            data-testid="visible-day"
+            role="cell"
+          >
+            29
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="Fri Apr 30 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            autofocus=""
+            class="day svelte-bdh7zw today selected"
+            data-testid="visible-day"
+            role="cell"
+          >
+            30
+          </button>
+          <button
+            aria-hidden="true"
+            aria-label="Sat May 01 2021 00:00:00 GMT+0200 (Central European Summer Time)"
+            class="day svelte-bdh7zw outside-of-current-month"
+            data-testid="hidden-day"
+            role="cell"
+          >
+            1
+          </button>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

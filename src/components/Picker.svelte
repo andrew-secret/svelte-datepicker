@@ -41,21 +41,10 @@
 
   $: fullMonth = dateAdapter.getWeekArray(currentMonth);
 
-  $: firstWeekOfMinDate = dateAdapter.getWeekArray(minDate)[0];
-
   function changeFocusedDay(newFocusDay: Date): void {
     if (focusedDay !== null && dateAdapter.isSameDay(newFocusDay, focusedDay)) {
       return;
     }
-
-    // if (dateAdapter.isSameMonth(newFocusDay, minDate)) {
-    //   return;
-    // }
-
-    console.log(
-      'dateAdapter.isSameMonth',
-      dateAdapter.isSameMonth(newFocusDay, minDate)
-    );
 
     focusedDay = newFocusDay;
 
@@ -71,6 +60,7 @@
     changeFocusedDay(focusedDay);
   };
 
+  // TODO: Clean up this function and make it more DRY
   async function handleKeyDown(event: KeyboardEvent, day: Date) {
     const current = document.activeElement;
     let items = [...document.querySelectorAll('.day[aria-hidden="false"]')];
@@ -89,8 +79,8 @@
         if (isWeekOutOfMinDateRange) {
           return;
         }
-        console.log('bar', isWeekOutOfMinDateRange);
 
+        // This could perform a month switch
         changeFocusedDay(dateAdapter.addDays(day, -7));
         if (needMonthSwitch) {
           newIndex = 0;
@@ -103,7 +93,6 @@
         break;
       case 'ArrowDown':
         const nextWeek = dateAdapter.addDays(day, 7);
-        console.log('nextWeek', nextWeek);
         const isWeekOutOfMaxDateRange = dateAdapter.isSameMonth(
           nextWeek,
           dateAdapter.getNextMonth(maxDate)
@@ -219,8 +208,6 @@
 
   {#if $openView === 'days'}
     <DayPicker
-      {minDate}
-      {maxDate}
       {dateAdapter}
       {fullMonth}
       {selectedDates}
