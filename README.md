@@ -1,9 +1,6 @@
 # Svelte Datepicker 📅
 
 ```bash
-$ > git clone git@github.com:yetanother-blog/netlify-ssr-example
-$ > cd netlify-ssr-example
-
 # install dependencies
 $ > npm install
 
