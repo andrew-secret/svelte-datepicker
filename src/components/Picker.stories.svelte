@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { dateFnsUtils } from '../storybook-utils/date-fns-adapter';
-  import Picker from './Picker.svelte';
+  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { dateFnsUtils } from "../storybook-utils/date-fns-adapter";
+  import Picker from "./Picker.svelte";
 
   export let value = dateFnsUtils.date();
 </script>
@@ -12,7 +12,10 @@
   <Picker
     dateAdapter={dateFnsUtils}
     {value}
-    on:selectDay={(e) => (value = e.detail)}
+    on:selectDay={(e) => {
+      console.log("event", e);
+      value = e.detail;
+    }}
   />
 </Template>
 

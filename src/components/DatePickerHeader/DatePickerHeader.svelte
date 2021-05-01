@@ -41,14 +41,18 @@
       class="year-switcher-label"
       >{dateAdapter.format(currentMonth, "year")}</time
     >
-    <button class="month-switcher" type="button" on:click={toggleYearPicker}>
+    <button
+      class="month-switcher"
+      type="button"
+      on:click={toggleYearPicker}
+      data-testid="expand-button"
+    >
       <span class="month-switcher-label">
         <svg
           class="caret"
           focusable="false"
           viewBox="0 0 24 24"
-          aria-hidden="true"
-          data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z" /></svg
+          aria-hidden="true"><path d="M7 10l5 5 5-5z" /></svg
         >
       </span>
     </button>

@@ -29,6 +29,7 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <button
           class="month-switcher svelte-jn3mp9"
+          data-testid="expand-button"
           type="button"
         >
           <span
@@ -37,7 +38,6 @@ exports[`DatePickerHeader should render component 1`] = `
             <svg
               aria-hidden="true"
               class="caret"
-              data-testid="ArrowDropDownIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
