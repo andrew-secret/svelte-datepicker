@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent, screen, waitFor, cleanup, createEvent } from '@testing-library/svelte';
+import { enUS } from 'date-fns/locale';
 import { dateFnsUtils } from '../storybook-utils/date-fns-adapter';
 import Picker from './Picker.svelte';
 import { openView } from './YearPicker/YearPickerStore'
@@ -13,6 +14,7 @@ describe('Picker', () => {
     const props = {
         dateAdapter: dateFnsUtils,
         value,
+        locale: dateFnsUtils.locale = enUS,
         focusedDay: value,
     }
 
@@ -49,7 +51,7 @@ describe('Picker', () => {
               )
 
             await waitFor(() => fireEvent(secondAprilButton, event));
-            expect(secondAprilButton).toHaveAttribute('aria-label', 'Fri Apr 02 2021 00:00:00 GMT+0200 (Central European Summer Time)');
+            expect(secondAprilButton).toHaveAttribute('aria-label', 'Fri Apr 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)');
         });
 
         it('should switch to previous month',() => {
