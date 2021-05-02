@@ -501,7 +501,7 @@ exports[`Picker should render w/ day picker 1`] = `
           <button
             aria-hidden="true"
             aria-label="Sat May 01 2021 00:00:00 GMT+0200 (Central European Summer Time)"
-            class="day svelte-bdh7zw today outside-of-current-month"
+            class="day svelte-bdh7zw outside-of-current-month"
             data-testid="hidden-day"
             role="cell"
           >
