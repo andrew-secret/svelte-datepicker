@@ -2,12 +2,11 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": [
     "src/**/*"
-    ],
-
+  ],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "types": ["node", "svelte", "jest", "@types/testing-library__jest-dom"]
   },
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
+  "exclude": ["node_modules/*", "public/*", "__mocks__"],
 }

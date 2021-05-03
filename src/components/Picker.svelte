@@ -1,13 +1,14 @@
 <script lang="ts">
-  import type { IUtils } from '@date-io/core/IUtils';
-  import { createEventDispatcher, tick } from 'svelte';
-  import DatePickerHeader from './DatePickerHeader/DatePickerHeader.svelte';
-  import DayPicker from './DayPicker/DayPicker.svelte';
-  import YearPicker from './YearPicker/YearPicker.svelte';
-  import { openView } from './YearPicker/YearPickerStore';
+  import type { IUtils } from "@date-io/core/IUtils";
+  import { createEventDispatcher, tick } from "svelte";
+  import DatePickerHeader from "./DatePickerHeader/DatePickerHeader.svelte";
+  import DayPicker from "./DayPicker/DayPicker.svelte";
+  import YearPicker from "./YearPicker/YearPicker.svelte";
+  import { openView } from "./YearPicker/YearPickerStore";
+  import "./global.css";
 
-  const defaultMinDate = new Date('1900-01-01');
-  const defaultMaxDate = new Date('2099-12-31');
+  const defaultMinDate = new Date("1900-01-01");
+  const defaultMaxDate = new Date("2099-12-31");
 
   export let dateAdapter: IUtils<Date>;
   export let locale: string | object | undefined;
@@ -23,7 +24,7 @@
   }
 
   function onDaySelect(day: Date): void {
-    dispatch('selectDay', day);
+    dispatch("selectDay", day);
   }
 
   $: selectedDates = (Array.isArray(value) ? value : [value])
@@ -69,7 +70,7 @@
     let newIndex: number;
 
     switch (event.key) {
-      case 'ArrowUp':
+      case "ArrowUp":
         const previousWeek = dateAdapter.addDays(day, -7);
         const isWeekOutOfMinDateRange = dateAdapter.isSameMonth(
           previousWeek,
@@ -91,7 +92,7 @@
         handeKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowDown':
+      case "ArrowDown":
         const nextWeek = dateAdapter.addDays(day, 7);
         const isWeekOutOfMaxDateRange = dateAdapter.isSameMonth(
           nextWeek,
@@ -114,7 +115,7 @@
         handeKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowLeft':
+      case "ArrowLeft":
         if (dateAdapter.isSameDay(day, minDate)) {
           return;
         }
@@ -131,7 +132,7 @@
         handeKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowRight':
+      case "ArrowRight":
         if (dateAdapter.isSameDay(day, maxDate)) {
           return;
         }
@@ -146,10 +147,10 @@
         handeKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'Tab':
+      case "Tab":
         newIndex = currentIndex;
 
-      case 'Enter':
+      case "Enter":
         newIndex = currentIndex;
       default:
         break;
@@ -188,7 +189,7 @@
   function selectYear(year: Date): void {
     const yearNumber = dateAdapter.getYear(year);
     value = dateAdapter.setYear(focusedDay, yearNumber);
-    openView.setOpenView('days');
+    openView.setOpenView("days");
   }
 </script>
 
@@ -202,11 +203,11 @@
     {selectNextMonth}
     {selectPreviousMonth}
   />
-  {#if $openView === 'year'}
+  {#if $openView === "year"}
     <YearPicker {dateAdapter} {currentMonth} {selectYear} />
   {/if}
 
-  {#if $openView === 'days'}
+  {#if $openView === "days"}
     <DayPicker
       {dateAdapter}
       {fullMonth}
@@ -222,11 +223,12 @@
 
 <style>
   .date-picker {
-    width: 320px;
+    width: 322px;
     margin: 0 auto;
     display: flex;
-    max-height: 358px;
+    max-height: 380px;
     overflow-x: hidden;
     flex-direction: column;
+    background-color: var(--sdp-bg-color);
   }
 </style>

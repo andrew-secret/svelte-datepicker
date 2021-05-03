@@ -23,37 +23,39 @@
     <div class="week" role="row">
       {#each week as day, i}
         <!-- svelte-ignore a11y-autofocus  -->
-        <button
-          aria-hidden={dateAdapter.getMonth(day) !== currentMonthNumber}
-          aria-label={day}
-          role="cell"
-          class="day"
-          data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
-            ? "hidden-day"
-            : "visible-day"}
-          class:today={dateAdapter.isSameDay(day, dateAdapter.date())}
-          class:selected={selectedDates.some(
-            (selectedDate) =>
-              selectedDate && dateAdapter.isSameDay(selectedDate, day)
-          )}
-          class:outside-of-current-month={dateAdapter.getMonth(day) !==
-            currentMonthNumber}
-          on:click={() => {
-            onDaySelect(day);
-          }}
-          on:focus={() => handleFocus(day)}
-          on:keydown={(event) => handleKeyDown(event, day)}
-          autofocus={focusedDay !== null &&
-            dateAdapter.isSameDay(day, focusedDay)}
-        >
-          {dateAdapter.format(day, "dayOfMonth")}
-        </button>
+        <div role="cell">
+          <button
+            aria-hidden={dateAdapter.getMonth(day) !== currentMonthNumber}
+            aria-label={day}
+            type="button"
+            class="day"
+            data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
+              ? "hidden-day"
+              : "visible-day"}
+            class:today={dateAdapter.isSameDay(day, dateAdapter.date())}
+            class:selected={selectedDates.some(
+              (selectedDate) =>
+                selectedDate && dateAdapter.isSameDay(selectedDate, day)
+            )}
+            class:outside-of-current-month={dateAdapter.getMonth(day) !==
+              currentMonthNumber}
+            on:click={() => {
+              onDaySelect(day);
+            }}
+            on:focus={() => handleFocus(day)}
+            on:keydown={(event) => handleKeyDown(event, day)}
+            autofocus={focusedDay !== null &&
+              dateAdapter.isSameDay(day, focusedDay)}
+          >
+            {dateAdapter.format(day, "dayOfMonth")}
+          </button>
+        </div>
       {/each}
     </div>
   {/each}
 </div>
 
-<style>
+<style lang="scss">
   .weekdays {
     display: flex;
     align-items: center;
@@ -61,10 +63,11 @@
   }
 
   .weekday-label {
-    color: rgba(0, 0, 0, 0.6);
-    width: 36px;
-    height: 40px;
-    margin: 0 2px;
+    color: var(--sdp-color-grey-400);
+    font-family: var(--sdp-font-family);
+    width: 42px;
+    height: 42px;
+    margin: 0 4px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -72,32 +75,55 @@
   }
 
   .week {
-    margin: 2px 0;
+    margin: 4px 0;
     display: flex;
     justify-content: center;
   }
 
   .day {
-    color: rgba(0, 0, 0, 0.87);
-    width: 36px;
-    height: 36px;
+    color: var(--sdp-base-font-color);
+    width: 42px;
+    height: 42px;
     padding: 0;
-    font-size: 0.75rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 0.85rem;
+    font-family: var(--sdp-font-family);
     font-weight: 400;
+    cursor: pointer;
     line-height: 1.66;
-    border-radius: 50%;
+    border-radius: var(--sdp-border-radius);
     letter-spacing: 0.03333em;
-    background-color: white;
+    background-color: var(--sdp-btn-bg-color);
+    transition: background-color 200ms ease-in-out;
     border: none;
     margin: 0 2px;
+
+    &:hover {
+      color: var(--sdp-hover-color);
+      background-color: var(--sdp-hover-bg-color);
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--sdp-focus-color);
+      box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
+    }
+  }
+
+  .day:active {
+    color: var(--sdp-active-color);
+    background-color: var(--sdp-bg-active-color);
   }
 
   .day.selected {
-    color: white;
+    color: var(--sdp-selected-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-weight: 500;
-    background-color: #1976d2;
+    background-color: var(--sdp-bg-selected-color);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color) , inset 0 0 0 0.1rem var(--sdp-bg-color);
+    }
   }
 
   .outside-of-current-month {
@@ -105,6 +131,12 @@
   }
 
   .today:not(.selected) {
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 0.15rem var(--sdp-base-font-color);
+
+    &:focus {
+      outline: none;
+      color: var(--sdp-focus-color);
+      box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
+    }
   }
 </style>

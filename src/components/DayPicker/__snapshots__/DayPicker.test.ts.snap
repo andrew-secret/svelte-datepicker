@@ -4,52 +4,52 @@ exports[`DayPicker should render component 1`] = `
 <body>
   <div>
     <div
-      class="weekdays svelte-bdh7zw"
+      class="weekdays svelte-ehwpem"
     >
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Su"
       >
         Su
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Mo"
       >
         Mo
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Tu"
       >
         Tu
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="We"
       >
         We
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Th"
       >
         Th
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Fr"
       >
         Fr
          
       </span>
       <span
-        class="weekday-label svelte-bdh7zw"
+        class="weekday-label svelte-ehwpem"
         title="Sa"
       >
         Sa
@@ -61,418 +61,586 @@ exports[`DayPicker should render component 1`] = `
       role="grid"
     >
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="true"
-          aria-label="Sun Dec 27 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+        <div
           role="cell"
         >
-          27
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Mon Dec 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Sun Dec 27 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            27
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          28
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Tue Dec 29 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Mon Dec 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            28
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          29
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Wed Dec 30 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Tue Dec 29 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            29
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          30
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Thu Dec 31 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Wed Dec 30 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            30
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          31
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Fri Jan 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="true"
+            aria-label="Thu Dec 31 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            31
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          1
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Sat Jan 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Fri Jan 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            1
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          2
-        </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Jan 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            2
+          </button>
+        </div>
          
       </div>
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="false"
-          aria-label="Sun Jan 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+        <div
           role="cell"
         >
-          3
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Mon Jan 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          autofocus=""
-          class="day svelte-bdh7zw selected"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Sun Jan 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            3
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          4
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Tue Jan 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Mon Jan 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            autofocus=""
+            class="day svelte-ehwpem selected"
+            data-testid="visible-day"
+            type="button"
+          >
+            4
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          5
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Wed Jan 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Tue Jan 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            5
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          6
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Thu Jan 07 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Wed Jan 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            6
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          7
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Fri Jan 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Thu Jan 07 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            7
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          8
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Sat Jan 09 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Fri Jan 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            8
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          9
-        </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Jan 09 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            9
+          </button>
+        </div>
          
       </div>
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="false"
-          aria-label="Sun Jan 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+        <div
           role="cell"
         >
-          10
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Mon Jan 11 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Sun Jan 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            10
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          11
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Tue Jan 12 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Mon Jan 11 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            11
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          12
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Wed Jan 13 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Tue Jan 12 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            12
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          13
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Thu Jan 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Wed Jan 13 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            13
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          14
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Fri Jan 15 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Thu Jan 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            14
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          15
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Sat Jan 16 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Fri Jan 15 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            15
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          16
-        </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Jan 16 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            16
+          </button>
+        </div>
          
       </div>
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="false"
-          aria-label="Sun Jan 17 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+        <div
           role="cell"
         >
-          17
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Mon Jan 18 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Sun Jan 17 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            17
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          18
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Tue Jan 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Mon Jan 18 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            18
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          19
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Wed Jan 20 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Tue Jan 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            19
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          20
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Thu Jan 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Wed Jan 20 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            20
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          21
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Fri Jan 22 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Thu Jan 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            21
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          22
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Sat Jan 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Fri Jan 22 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            22
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          23
-        </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Jan 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            23
+          </button>
+        </div>
          
       </div>
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="false"
-          aria-label="Sun Jan 24 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+        <div
           role="cell"
         >
-          24
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Mon Jan 25 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Sun Jan 24 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            24
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          25
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Tue Jan 26 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Mon Jan 25 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            25
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          26
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Wed Jan 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Tue Jan 26 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            26
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          27
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Thu Jan 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Wed Jan 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            27
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          28
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Fri Jan 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Thu Jan 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            28
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          29
-        </button>
-        <button
-          aria-hidden="false"
-          aria-label="Sat Jan 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+          <button
+            aria-hidden="false"
+            aria-label="Fri Jan 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            29
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          30
-        </button>
+          <button
+            aria-hidden="false"
+            aria-label="Sat Jan 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            30
+          </button>
+        </div>
          
       </div>
       <div
-        class="week svelte-bdh7zw"
+        class="week svelte-ehwpem"
         role="row"
       >
-        <button
-          aria-hidden="false"
-          aria-label="Sun Jan 31 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw"
-          data-testid="visible-day"
+        <div
           role="cell"
         >
-          31
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Mon Feb 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="false"
+            aria-label="Sun Jan 31 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem"
+            data-testid="visible-day"
+            type="button"
+          >
+            31
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          1
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Tue Feb 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Mon Feb 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            1
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          2
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Wed Feb 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Tue Feb 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            2
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          3
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Thu Feb 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Wed Feb 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            3
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          4
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Fri Feb 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Thu Feb 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            4
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          5
-        </button>
-        <button
-          aria-hidden="true"
-          aria-label="Sat Feb 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-          class="day svelte-bdh7zw outside-of-current-month"
-          data-testid="hidden-day"
+          <button
+            aria-hidden="true"
+            aria-label="Fri Feb 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            5
+          </button>
+        </div>
+        <div
           role="cell"
         >
-          6
-        </button>
+          <button
+            aria-hidden="true"
+            aria-label="Sat Feb 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
+            class="day svelte-ehwpem outside-of-current-month"
+            data-testid="hidden-day"
+            type="button"
+          >
+            6
+          </button>
+        </div>
          
       </div>
     </div>
