@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import type { IUtils } from '@date-io/core/IUtils';
+  import { onMount } from "svelte";
+  import type { IUtils } from "@date-io/core/IUtils";
 
   // TODO: move to shared constants file
-  const defaultMinDate = new Date('1900-01-01');
-  const defaultMaxDate = new Date('2099-12-31');
+  const defaultMinDate = new Date("1900-01-01");
+  const defaultMaxDate = new Date("2099-12-31");
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;
@@ -33,25 +33,25 @@
     let newIndex: number;
 
     switch (event.key) {
-      case 'ArrowUp':
+      case "ArrowUp":
         handleYearFocus(yearNumber - 4);
         newIndex = (currentIndex + yearItems.length - 4) % yearItems.length;
         handleKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowDown':
+      case "ArrowDown":
         handleYearFocus(yearNumber + 4);
         newIndex = (currentIndex + yearItems.length + 4) % yearItems.length;
         handleKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowLeft':
+      case "ArrowLeft":
         handleYearFocus(yearNumber - 1);
         newIndex = (currentIndex + yearItems.length - 1) % yearItems.length;
         handleKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
-      case 'ArrowRight':
+      case "ArrowRight":
         handleYearFocus(yearNumber + 1);
         newIndex = (currentIndex + yearItems.length + 1) % yearItems.length;
         handleKeyDownFocus(newIndex, current);
@@ -64,11 +64,9 @@
 
   onMount(() => {
     const selectedYear = [...years.childNodes].filter((year: HTMLElement) =>
-      year.classList.contains('selected')
+      year.classList.contains("selected")
     );
-
     if (selectedYear[0]) {
-      (selectedYear[0] as HTMLElement).scrollIntoView();
       (selectedYear[0] as HTMLElement).focus();
     }
   });
@@ -92,12 +90,12 @@
       on:keydown={(event) => handleKeyDown(event, year)}
       on:click={() => selectYear(year)}
     >
-      {dateAdapter.format(year, 'year')}
+      {dateAdapter.format(year, "year")}
     </button>
   {/each}
 </div>
 
-<style>
+<style lang="scss">
   .year-picker {
     height: 100%;
     margin: 0 4px;
@@ -105,11 +103,11 @@
     flex-wrap: wrap;
     overflow-y: auto;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .year-button {
-    flex-basis: 25%;
-
+    flex-basis: calc(25% - 4px);
     color: unset;
     width: 72px;
     border: none;
@@ -118,24 +116,38 @@
     margin: 8px 0;
     outline: 0;
     font-size: 1rem;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 400;
+    font-family: var(--sdp-font-family);
+    font-weight: var(--sdp-font-weight);
     line-height: 1.75;
     border-radius: 16px;
     letter-spacing: 0.00938em;
     background-color: transparent;
+    border-radius: var(--sdp-border-radius);
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      color: var(--sdp-hover-color);
+      background-color: var(--sdp-hover-bg-color);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
+    }
   }
 
-  .year-button:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-  }
-
-  .year-button:focus {
-    background-color: rgba(0, 0, 0, 0.04);
+  .year-button:active {
+    color: var(--sdp-active-color);
+    background-color: var(--sdp-bg-active-color);
   }
 
   .year-button.selected {
-    background-color: #1976d2;
-    color: white;
+    color: var(--sdp-selected-color);
+    background-color: var(--sdp-bg-selected-color);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color) , inset 0 0 0 0.1rem var(--sdp-bg-color);
+    }
   }
 </style>

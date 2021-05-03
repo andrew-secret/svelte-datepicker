@@ -4,14 +4,14 @@ exports[`DatePickerHeader should render component 1`] = `
 <body>
   <div>
     <div
-      class="calendar-header svelte-jn3mp9"
+      class="calendar-header svelte-wai4k1"
     >
       <div
-        class="year-switcher-wrapper"
+        class="year-switcher-wrapper svelte-wai4k1"
       >
         <time
           aria-live="polite"
-          class="year-switcher-label"
+          class="year-switcher-label svelte-wai4k1"
           data-testid="selected-month"
           datetime="4 Jan 2021"
         >
@@ -20,7 +20,7 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <time
           aria-live="polite"
-          class="year-switcher-label"
+          class="year-switcher-label svelte-wai4k1"
           data-testid="selected-year"
           datetime="4 Jan 2021"
         >
@@ -28,16 +28,18 @@ exports[`DatePickerHeader should render component 1`] = `
         </time>
          
         <button
-          class="month-switcher svelte-jn3mp9"
+          aria-pressed="false"
+          class="month-switcher svelte-wai4k1"
           data-testid="expand-button"
           type="button"
         >
           <span
-            class="month-switcher-label svelte-jn3mp9"
+            class="month-switcher-label svelte-wai4k1"
           >
             <svg
               aria-hidden="true"
               class="caret"
+              fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -50,14 +52,14 @@ exports[`DatePickerHeader should render component 1`] = `
       </div>
        
       <div
-        class="month-switcher-wrapper"
+        class="month-switcher-wrapper svelte-wai4k1"
       >
         <button
           aria-label="previous month"
-          class="month-switcher previous-month svelte-jn3mp9"
+          class="month-switcher previous-month svelte-wai4k1"
         >
           <span
-            class="month-switcher-label svelte-jn3mp9"
+            class="month-switcher-label svelte-wai4k1"
           >
             <svg
               aria-hidden="true"
@@ -75,10 +77,10 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <button
           aria-label="next month"
-          class="month-switcher next-month svelte-jn3mp9"
+          class="month-switcher next-month svelte-wai4k1"
         >
           <span
-            class="month-switcher-label svelte-jn3mp9"
+            class="month-switcher-label svelte-wai4k1"
           >
             <svg
               aria-hidden="true"
