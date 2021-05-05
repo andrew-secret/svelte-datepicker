@@ -46,6 +46,7 @@
     "@storybook/addon-svelte-csf": "^1.0.0",
     "@storybook/addons": "^6.2.9",
     "@storybook/svelte": "^6.2.9",
+    "@sveltejs/eslint-config": "github:sveltejs/eslint-config",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^1.0.10",
@@ -54,6 +55,7 @@
     "babel-loader": "^8.1.0",
     "date-fns": "^2.21.1",
     "del-cli": "^3.0.0",
+    "eslint": "^7.6.0",
     "jest": "^26.6.3",
     "luxon": "^1.26.0",
     "moment": "^2.29.1",
@@ -78,6 +80,9 @@
   "files": [
     "dist"
   ],
+  "eslintConfig": {
+    "extends": "@sveltejs"
+  },
   "dependencies": {
     "@date-io/core": "^2.10.7",
     "@date-io/date-fns": "^2.10.8",
