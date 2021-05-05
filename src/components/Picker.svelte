@@ -12,8 +12,8 @@
 
   export let dateAdapter: IUtils<Date>;
   export let locale: string | object | undefined;
-  export let value: Date = dateAdapter.date();
-  export let focusedDay = dateAdapter.date();
+  export let value = dateAdapter.date() as Date;
+  export let focusedDay = dateAdapter.date() as Date;
   export let minDate: Date = defaultMinDate;
   export let maxDate: Date = defaultMaxDate;
 
@@ -63,9 +63,13 @@
 
   // TODO: Clean up this function and make it more DRY
   async function handleKeyDown(event: KeyboardEvent, day: Date) {
-    const current = document.activeElement;
+    const current = document.activeElement as HTMLElement;
     let items = [...document.querySelectorAll('.day[aria-hidden="false"]')];
-    const currentIndex = items.indexOf(current);
+    const currentIndex = current ? items.indexOf(current) : 0;
+
+    if (!current) {
+      return;
+    }
 
     let newIndex: number;
 
@@ -157,10 +161,10 @@
     }
   }
 
-  async function handeKeyDownFocus(index: number, activeElement: Element) {
-    let newItems;
+  async function handeKeyDownFocus(index: number, activeElement: HTMLElement) {
+    let newItems: Element[];
 
-    (activeElement as any).blur();
+    activeElement.blur();
 
     // because of two maps we have to wait 200ms
     if (needMonthSwitch) {
@@ -192,9 +196,6 @@
     openView.setOpenView("days");
   }
 </script>
-
-<!-- your code here -->
-<h1>Date: {value}!</h1>
 
 <div class="date-picker">
   <DatePickerHeader

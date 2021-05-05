@@ -8,6 +8,8 @@
   export let onDaySelect: (day: Date) => void;
   export let handleKeyDown: (event: Event, date: Date) => Promise<void>;
   export let handleFocus: (focusedDay: Date) => void;
+
+  let currentDay = dateAdapter.date() as Date;
 </script>
 
 <div class="weekdays">
@@ -32,7 +34,7 @@
             data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
               ? "hidden-day"
               : "visible-day"}
-            class:today={dateAdapter.isSameDay(day, dateAdapter.date())}
+            class:today={dateAdapter.isSameDay(day, currentDay)}
             class:selected={selectedDates.some(
               (selectedDate) =>
                 selectedDate && dateAdapter.isSameDay(selectedDate, day)
@@ -122,7 +124,8 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color) , inset 0 0 0 0.1rem var(--sdp-bg-color);
+      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color),
+        inset 0 0 0 0.1rem var(--sdp-bg-color);
     }
   }
 

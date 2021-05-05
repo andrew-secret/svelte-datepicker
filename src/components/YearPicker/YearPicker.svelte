@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import type { IUtils } from "@date-io/core/IUtils";
-
-  // TODO: move to shared constants file
-  const defaultMinDate = new Date("1900-01-01");
-  const defaultMaxDate = new Date("2099-12-31");
+  import {
+    defaultMaxDate,
+    defaultMinDate,
+  } from "../../utils/date-default-ranges";
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;
@@ -98,7 +98,8 @@
 <style lang="scss">
   .year-picker {
     height: 100%;
-    margin: 0 4px;
+    padding: 0 4px;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
@@ -112,7 +113,7 @@
     width: 72px;
     border: none;
     cursor: pointer;
-    height: 36px;
+    height: 42px;
     margin: 8px 0;
     outline: 0;
     font-size: 1rem;
@@ -147,7 +148,8 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color) , inset 0 0 0 0.1rem var(--sdp-bg-color);
+      box-shadow: 0 0 0 0.15rem var(--sdp-bg-focus-color),
+        inset 0 0 0 0.1rem var(--sdp-bg-color);
     }
   }
 </style>

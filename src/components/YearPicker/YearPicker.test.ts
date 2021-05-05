@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/svelte';
-import { dateFnsUtils } from '../../storybook-utils/date-fns-adapter';
+import { dateFnsUtils } from '../../utils/date-fns-adapter'
 import YearPicker from './YearPicker.svelte';
 
 describe('YearPicker', () => {

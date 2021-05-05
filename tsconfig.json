@@ -4,9 +4,12 @@
     "src/**/*"
   ],
   "compilerOptions": {
+    "target": "es2019",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "types": ["node", "svelte", "jest", "@types/testing-library__jest-dom"]
+    "types": ["node", "jest", "@types/testing-library__jest-dom", "svelte"],
+    "strictNullChecks": true,
+    "moduleResolution": "node"
   },
   "exclude": ["node_modules/*", "public/*", "__mocks__"],
 }
