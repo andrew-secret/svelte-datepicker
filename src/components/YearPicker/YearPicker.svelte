@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import type { IUtils } from "@date-io/core/IUtils";
-
-  // TODO: move to shared constants file
-  const defaultMinDate = new Date("1900-01-01");
-  const defaultMaxDate = new Date("2099-12-31");
+  import {
+    defaultMaxDate,
+    defaultMinDate,
+  } from "../../utils/date-default-ranges";
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;

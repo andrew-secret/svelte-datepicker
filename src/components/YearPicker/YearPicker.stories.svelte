@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { dateFnsUtils } from '../../storybook-utils/date-fns-adapter';
-  import YearPicker from './YearPicker.svelte';
+  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import { dateFnsUtils } from "../../utils/date-fns-adapter";
+  import YearPicker from "./YearPicker.svelte";
 </script>
 
 <Meta title="Example/YearPicker" component={YearPicker} />

@@ -1,10 +1,10 @@
 <script lang="ts">
   import type { IUtils } from "@date-io/core/IUtils";
   import { openView } from "../YearPicker/YearPickerStore";
-
-  // TODO: move to shared constants file
-  const defaultMinDate = new Date("1900-01-01");
-  const defaultMaxDate = new Date("2099-12-31");
+  import {
+    defaultMaxDate,
+    defaultMinDate,
+  } from "../../utils/date-default-ranges";
 
   export let dateAdapter: IUtils<Date>;
   export let currentMonth: Date;

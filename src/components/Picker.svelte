@@ -197,9 +197,6 @@
   }
 </script>
 
-<!-- your code here -->
-<h1>Date: {value}!</h1>
-
 <div class="date-picker">
   <DatePickerHeader
     {dateAdapter}

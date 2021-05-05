@@ -9,6 +9,7 @@
     "esModuleInterop": true,
     "types": ["node", "jest", "@types/testing-library__jest-dom", "svelte"],
     "strictNullChecks": true,
+    "moduleResolution": "node"
   },
   "exclude": ["node_modules/*", "public/*", "__mocks__"],
 }
