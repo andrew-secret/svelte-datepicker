@@ -1,12 +1,21 @@
 {
-  "name": "svelte-datepicker",
-  "version": "0.2.0",
+  "name": "svelte-inclusive-datepicker",
+  "version": "0.0.1-alpha.0",
   "author": "André Rusakow",
-  "description": "Svelte datepicker",
+  "description": "accessible date picker for Svelte",
   "svelte": "dist/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "license": "MIT",
+  "keywords": [
+    "svelte",
+    "typescript",
+    "accessibility"
+  ],
+  "homepage": "https://github.com/andrew-secret/svelte-datepicker",
+  "repository": {
+    "url": "https://github.com/andrew-secret/svelte-datepicker.git"
+  },
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
@@ -73,9 +82,6 @@
   },
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"
-  ],
-  "keywords": [
-    "svelte"
   ],
   "files": [
     "dist"

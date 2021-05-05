@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
-  import { dateFnsUtils } from "../storybook-utils/date-fns-adapter";
+  import { dateFnsUtils } from "../utils/date-fns-adapter";
   import Picker from "./Picker.svelte";
 
   export let value = dateFnsUtils.date();
