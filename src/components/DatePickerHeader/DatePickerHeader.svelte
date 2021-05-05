@@ -25,23 +25,24 @@
   $: shouldDisableMaxDate = dateAdapter.isSameMonth(currentMonth, maxDate);
 </script>
 
-<div class="calendar-header">
+<div class="datepicker-header">
   <div class="year-switcher-wrapper">
     <time
       datetime={dateAdapter.format(currentMonth, "fullDate")}
       data-testid="selected-month"
       aria-live="polite"
       class="year-switcher-label"
-      >{dateAdapter.format(currentMonth, "month")}</time
     >
+      {dateAdapter.format(currentMonth, "month")}
+    </time>
     <time
       datetime={dateAdapter.format(currentMonth, "fullDate")}
       data-testid="selected-year"
       aria-live="polite"
       class="year-switcher-label"
     >
-      {dateAdapter.format(currentMonth, "year")}</time
-    >
+      {dateAdapter.format(currentMonth, "year")}
+    </time>
     <button
       class="month-switcher"
       type="button"
@@ -55,59 +56,62 @@
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
-          aria-hidden="true"><path d="M7 10l5 5 5-5z" /></svg
+          aria-hidden="true"
         >
+          <path d="M7 10l5 5 5-5z" />
+        </svg>
       </span>
     </button>
   </div>
   {#if $openView === "days"}
-  <div class="month-switcher-wrapper">
-    <button
-      disabled={shouldDisableMinDate}
-      class="month-switcher previous-month"
-      aria-label="previous month"
-      on:click={selectPreviousMonth}
-    >
-      <span class="month-switcher-label">
-        <svg
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          data-testid="ArrowLeftIcon"
-          ><path
-            d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-          /></svg
-        >
-      </span>
-    </button>
-    <button
-      disabled={shouldDisableMaxDate}
-      aria-label="next month"
-      class="month-switcher next-month"
-      on:click={selectNextMonth}
-    >
-      <span class="month-switcher-label">
-        <svg
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          data-testid="ArrowRightIcon"
-          ><path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-          /></svg
-        >
-      </span>
-    </button>
-  </div>
+    <div class="month-switcher-wrapper">
+      <button
+        disabled={shouldDisableMinDate}
+        class="month-switcher previous-month"
+        aria-label="previous month"
+        on:click={selectPreviousMonth}
+      >
+        <span class="month-switcher-label">
+          <svg
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            data-testid="ArrowLeftIcon"
+          >
+            <path
+              d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        disabled={shouldDisableMaxDate}
+        aria-label="next month"
+        class="month-switcher next-month"
+        on:click={selectNextMonth}
+      >
+        <span class="month-switcher-label">
+          <svg
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            data-testid="ArrowRightIcon"
+          >
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+          </svg>
+        </span>
+      </button>
+    </div>
   {/if}
 </div>
 
 <style lang="scss">
-  .calendar-header {
+  .datepicker-header {
     display: flex;
     justify-content: space-between;
+    padding: 4px 0;
   }
 
   .year-switcher-wrapper {
@@ -117,6 +121,7 @@
 
   .year-switcher-label {
     font-size: 1rem;
+    margin-right: 4px;
     font-family: var(--sdp-font-family);
     font-weight: var(--sdp-font-weight);
   }
@@ -146,7 +151,7 @@
     &[aria-pressed="true"] {
       span {
         transform: rotate(180deg);
-       }
+      }
     }
 
     &[aria-pressed="false"] {
@@ -156,7 +161,7 @@
     }
 
     &:hover {
-      color:var(--sdp-hover-color);
+      color: var(--sdp-hover-color);
       background-color: var(--sdp-hover-bg-color);
     }
 
@@ -164,6 +169,10 @@
       outline: none;
       box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
     }
+  }
+
+  .previous-month {
+    margin-right: 4px;
   }
 
   .month-switcher:active {
