@@ -5,7 +5,8 @@ import typescript from '@rollup/plugin-typescript';
 import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
 import autoPreprocess from 'svelte-preprocess';
-import scss from 'rollup-plugin-scss'
+import scss from 'rollup-plugin-scss';
+import filesize from 'rollup-plugin-filesize';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -29,5 +30,6 @@ export default {
 		typescript({ sourceMap: !production }),
 		commonjs(),
 		resolve(),
+		filesize(),
 	]
 };
