@@ -6,7 +6,6 @@
   export let currentMonthNumber: number;
   export let focusedDay: Date;
   export let onDaySelect: (day: Date) => void;
-  export let handleKeyDown: (event: Event, date: Date) => Promise<void>;
   export let handleFocus: (focusedDay: Date) => void;
 
   let currentDay = dateAdapter.date() as Date;
@@ -45,7 +44,6 @@
               onDaySelect(day);
             }}
             on:focus={() => handleFocus(day)}
-            on:keydown={(event) => handleKeyDown(event, day)}
             autofocus={focusedDay !== null &&
               dateAdapter.isSameDay(day, focusedDay)}
           >

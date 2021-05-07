@@ -34,7 +34,7 @@
         selectedDateItem && dateAdapter.startOfDay(selectedDateItem)
     );
 
-  $: currentMonth = dateAdapter.startOfMonth(value ?? dateAdapter.date());
+  $: currentMonth = value ?? dateAdapter.date();
   $: currentMonthNumber = dateAdapter.getMonth(currentMonth);
 
   $: needMonthSwitch =
@@ -62,12 +62,17 @@
   };
 
   // TODO: Clean up this function and make it more DRY
-  async function handleKeyDown(event: KeyboardEvent, day: Date) {
+  async function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
     let items = [...document.querySelectorAll('.day[aria-hidden="false"]')];
     const currentIndex = current ? items.indexOf(current) : 0;
 
-    if (!current) {
+    /*
+      If we we don't find a current on document or the
+      year picker is open we don't handle event 
+      delagation for the day picker.
+    */
+    if (!current || $openView === "year") {
       return;
     }
 
@@ -75,7 +80,7 @@
 
     switch (event.key) {
       case "ArrowUp":
-        const previousWeek = dateAdapter.addDays(day, -7);
+        const previousWeek = dateAdapter.addDays(focusedDay, -7);
         const isWeekOutOfMinDateRange = dateAdapter.isSameMonth(
           previousWeek,
           dateAdapter.getPreviousMonth(minDate)
@@ -86,7 +91,7 @@
         }
 
         // This could perform a month switch
-        changeFocusedDay(dateAdapter.addDays(day, -7));
+        changeFocusedDay(dateAdapter.addDays(focusedDay, -7));
         if (needMonthSwitch) {
           newIndex = 0;
         } else {
@@ -97,7 +102,7 @@
         event.preventDefault();
         break;
       case "ArrowDown":
-        const nextWeek = dateAdapter.addDays(day, 7);
+        const nextWeek = dateAdapter.addDays(focusedDay, 7);
         const isWeekOutOfMaxDateRange = dateAdapter.isSameMonth(
           nextWeek,
           dateAdapter.getNextMonth(maxDate)
@@ -108,7 +113,7 @@
         }
 
         // This could perform a month switch
-        changeFocusedDay(dateAdapter.addDays(day, 7));
+        changeFocusedDay(dateAdapter.addDays(focusedDay, 7));
         if (needMonthSwitch) {
           newIndex = 0;
         } else {
@@ -120,12 +125,12 @@
         event.preventDefault();
         break;
       case "ArrowLeft":
-        if (dateAdapter.isSameDay(day, minDate)) {
+        if (dateAdapter.isSameDay(focusedDay, minDate)) {
           return;
         }
 
         // This could perform a month switch
-        changeFocusedDay(dateAdapter.addDays(day, -1));
+        changeFocusedDay(dateAdapter.addDays(focusedDay, -1));
         if (needMonthSwitch) {
           newIndex = 0;
         } else {
@@ -137,17 +142,19 @@
         event.preventDefault();
         break;
       case "ArrowRight":
-        if (dateAdapter.isSameDay(day, maxDate)) {
+        if (dateAdapter.isSameDay(focusedDay, maxDate)) {
           return;
         }
 
         // This could perform a month switch
-        changeFocusedDay(dateAdapter.addDays(day, 1));
+        changeFocusedDay(dateAdapter.addDays(focusedDay, 1));
+
         if (needMonthSwitch) {
           newIndex = 0;
         } else {
           newIndex = (currentIndex + items.length + 1) % items.length;
         }
+
         handeKeyDownFocus(newIndex, current);
         event.preventDefault();
         break;
@@ -166,14 +173,15 @@
 
     activeElement.blur();
 
-    // because of two maps we have to wait 200ms
     if (needMonthSwitch) {
+      // because of two DOM manipulation we have to use tick
       await tick();
       newItems = [...document.querySelectorAll('.day[aria-hidden="false"]')];
       (newItems[0] as any).focus();
     }
 
     if (!needMonthSwitch) {
+      // because of two DOM manipulation we have to use tick
       await tick();
       newItems = [...document.querySelectorAll('.day[aria-hidden="false"]')];
       (newItems[index] as any).focus();
@@ -183,19 +191,39 @@
   function selectNextMonth() {
     currentMonth = dateAdapter.getNextMonth(currentMonth);
     focusedDay = currentMonth;
+
+    onDaySelect(currentMonth);
   }
 
   function selectPreviousMonth() {
     currentMonth = dateAdapter.getPreviousMonth(currentMonth);
     focusedDay = currentMonth;
+
+    onDaySelect(currentMonth);
   }
 
-  function selectYear(year: Date): void {
+  async function selectYear(year: Date): Promise<void> {
     const yearNumber = dateAdapter.getYear(year);
+
+    /*
+      update focusedDay to prevent month switch
+      back to previous selection with keyboard controls
+    */
+    focusedDay = value;
     value = dateAdapter.setYear(focusedDay, yearNumber);
+    onDaySelect(value);
+
     openView.setOpenView("days");
+
+    await tick();
+    const selectedDay = document.querySelector(".selected");
+    if (selectedDay) {
+      (selectedDay as HTMLButtonElement).focus();
+    }
   }
 </script>
+
+<svelte:window on:keydown={handleKeyDown} />
 
 <div class="date-picker">
   <DatePickerHeader
@@ -216,7 +244,6 @@
       {currentMonthNumber}
       {focusedDay}
       {onDaySelect}
-      {handleKeyDown}
       {handleFocus}
     />
   {/if}
