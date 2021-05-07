@@ -5,6 +5,7 @@
     defaultMaxDate,
     defaultMinDate,
   } from "../../utils/date-default-ranges";
+  import { openView } from "./YearPickerStore";
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;
@@ -24,13 +25,17 @@
     [...(years.childNodes as any)][index].focus();
   }
 
-  function handleKeyDown(event: KeyboardEvent, year: Date) {
+  function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
     const yearItems = [...years.childNodes];
     const currentIndex = yearItems.indexOf(current);
-    const yearNumber = dateAdapter.getYear(year);
+    const yearNumber = dateAdapter.getYear(currentMonth);
 
     let newIndex: number;
+
+    if (!current || $openView === "days") {
+      return;
+    }
 
     switch (event.key) {
       case "ArrowUp":
@@ -78,6 +83,8 @@
   }
 </script>
 
+<svelte:window on:keydown={handleKeyDown} />
+
 <div class="year-picker" bind:this={years}>
   {#each dateAdapter.getYearRange(minDate, maxDate) as year, i}
     <button
@@ -87,7 +94,6 @@
       aria-pressed={handleSelectClass(currentMonth, year)}
       arial-label={year}
       on:focus={() => handleYearFocus(dateAdapter.getYear(year))}
-      on:keydown={(event) => handleKeyDown(event, year)}
       on:click={() => selectYear(year)}
     >
       {dateAdapter.format(year, "year")}
