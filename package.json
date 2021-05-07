@@ -1,6 +1,6 @@
 {
   "name": "svelte-inclusive-datepicker",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-alpha.0",
   "author": "André Rusakow",
   "description": "accessible date picker for Svelte",
   "svelte": "dist/index.js",
@@ -26,17 +26,13 @@
   },
   "peerDependencies": {
     "date-fns": "^2.21.1",
-    "luxon": "^1.26.0",
-    "moment": "^2.29.1"
+    "luxon": "^1.26.0"
   },
   "peerDependenciesMeta": {
     "date-fns": {
       "optional": true
     },
     "dayjs": {
-      "optional": true
-    },
-    "moment": {
       "optional": true
     },
     "luxon": {
@@ -67,7 +63,6 @@
     "eslint": "^7.6.0",
     "jest": "^26.6.3",
     "luxon": "^1.26.0",
-    "moment": "^2.29.1",
     "rollup": "^2.46.0",
     "rollup-plugin-filesize": "^9.1.1",
     "rollup-plugin-scss": "^2.6.1",
