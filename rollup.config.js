@@ -25,6 +25,10 @@ export default {
 	plugins: [
 		svelte({
 			preprocess: autoPreprocess(),
+			emitCss: false,
+			compilerOptions: {
+				hydratable: false
+			}
 		}),
 		scss(),
 		typescript({ sourceMap: !production }),
