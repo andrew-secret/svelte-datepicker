@@ -9,6 +9,19 @@
   export let handleFocus: (focusedDay: Date) => void;
 
   let currentDay = dateAdapter.date() as Date;
+
+  function handleTabIndex(day: Date): number {
+    const isSelected = selectedDates.some(
+      (selectedDate) => selectedDate && dateAdapter.isSameDay(selectedDate, day)
+    );
+
+    const isFocused = dateAdapter.isSameDay(day, focusedDay);
+
+    if (isSelected || isFocused) {
+      return 0;
+    }
+    return -1;
+  }
 </script>
 
 <div class="weekdays">
@@ -33,6 +46,7 @@
             data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
               ? "hidden-day"
               : "visible-day"}
+            tabindex={handleTabIndex(day)}
             class:today={dateAdapter.isSameDay(day, currentDay)}
             class:selected={selectedDates.some(
               (selectedDate) =>

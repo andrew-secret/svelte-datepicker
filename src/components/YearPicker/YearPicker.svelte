@@ -5,7 +5,7 @@
     defaultMaxDate,
     defaultMinDate,
   } from "../../utils/date-default-ranges";
-  import { openView } from "./YearPickerStore";
+  import { handleFocusTrap } from "../../utils/focus-trap";
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;
@@ -25,7 +25,7 @@
     [...(years.childNodes as any)][index].focus();
   }
 
-  function handleKeyDown(event: KeyboardEvent) {
+  async function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
     const yearItems = [...years.childNodes];
     const currentIndex = yearItems.indexOf(current);
@@ -33,9 +33,16 @@
 
     let newIndex: number;
 
-    if (!current || $openView === "days") {
+    if (!current || $view === "days") {
       return;
     }
+
+    await tick();
+    handleFocusTrap(event, {
+      element: datepicker,
+      classNames: `.month-switcher:not([disabled]), .year-button:not([tabindex='-1']`,
+      isFocusTrapDisabled: false,
+    });
 
     switch (event.key) {
       case "ArrowUp":

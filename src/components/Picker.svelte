@@ -4,7 +4,9 @@
   import DatePickerHeader from "./DatePickerHeader/DatePickerHeader.svelte";
   import DayPicker from "./DayPicker/DayPicker.svelte";
   import YearPicker from "./YearPicker/YearPicker.svelte";
-  import { openView } from "./YearPicker/YearPickerStore";
+  import { defaultMinDate, defaultMaxDate } from "../utils/date-default-ranges";
+  import { writable } from "svelte/store";
+  import { handleFocusTrap } from "../utils/focus-trap";
   import "./global.css";
 
   const defaultMinDate = new Date("1900-01-01");
@@ -16,6 +18,7 @@
   export let focusedDay = dateAdapter.date() as Date;
   export let minDate: Date = defaultMinDate;
   export let maxDate: Date = defaultMaxDate;
+  export let isFocusTrapDisabled: boolean = false;
 
   const dispatch = createEventDispatcher();
 
@@ -72,9 +75,16 @@
       year picker is open we don't handle event 
       delagation for the day picker.
     */
-    if (!current || $openView === "year") {
+    if (!current || $view === "years") {
       return;
     }
+
+    await tick();
+    handleFocusTrap(event, {
+      element: datepicker,
+      classNames: `.month-switcher:not([disabled]), .day:not([tabindex='-1']`,
+      isFocusTrapDisabled,
+    });
 
     let newIndex: number;
 
