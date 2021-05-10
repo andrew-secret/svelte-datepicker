@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import type { IUtils } from "@date-io/core/IUtils";
+  import type { Writable } from "svelte/store";
+  import type { view } from "../../utils/view-types";
+  import { getContext, onMount, tick } from "svelte";
   import {
     defaultMaxDate,
     defaultMinDate,
@@ -11,7 +13,10 @@
   export let minDate: Date = defaultMinDate;
   export let maxDate: Date = defaultMaxDate;
   export let currentMonth: Date;
+  export let datepicker: HTMLElement | null = null;
   export let selectYear: (year: Date) => void;
+
+  const view = getContext<Writable<view>>("view");
 
   let focusedYear: number;
   let years: HTMLElement;
@@ -74,6 +79,12 @@
     }
   }
 
+  function handleSelectClass(currentMonth: Date, date: Date): boolean {
+    const currentMonthYear = dateAdapter.getYear(currentMonth);
+    const year = dateAdapter.getYear(date);
+    return currentMonthYear === year;
+  }
+
   onMount(() => {
     const selectedYear = [...years.childNodes].filter((year: HTMLElement) =>
       year.classList.contains("selected")
@@ -82,22 +93,20 @@
       (selectedYear[0] as HTMLElement).focus();
     }
   });
-
-  function handleSelectClass(currentMonth: Date, date: Date): boolean {
-    const currentMonthYear = dateAdapter.getYear(currentMonth);
-    const year = dateAdapter.getYear(date);
-    return currentMonthYear === year;
-  }
 </script>
 
-<svelte:window on:keydown={handleKeyDown} />
-
-<div class="year-picker" bind:this={years}>
-  {#each dateAdapter.getYearRange(minDate, maxDate) as year, i}
+<div
+  class="year-picker"
+  bind:this={years}
+  on:keydown={handleKeyDown}
+  tabindex="-1"
+>
+  {#each dateAdapter.getYearRange(minDate, maxDate) as year}
     <button
       class="year-button"
       class:selected={handleSelectClass(currentMonth, year)}
       type="button"
+      tabindex={handleSelectClass(currentMonth, year) ? 0 : -1}
       aria-pressed={handleSelectClass(currentMonth, year)}
       arial-label={year}
       on:focus={() => handleYearFocus(dateAdapter.getYear(year))}

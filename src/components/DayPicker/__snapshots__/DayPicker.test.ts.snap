@@ -72,6 +72,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Dec 27 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             27
@@ -85,6 +86,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Mon Dec 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             28
@@ -98,6 +100,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Dec 29 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             29
@@ -111,6 +114,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Dec 30 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             30
@@ -124,6 +128,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Dec 31 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             31
@@ -137,6 +142,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Jan 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             1
@@ -150,6 +156,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Jan 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             2
@@ -169,6 +176,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Jan 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             3
@@ -183,6 +191,7 @@ exports[`DayPicker should render component 1`] = `
             autofocus=""
             class="day svelte-ehwpem selected"
             data-testid="visible-day"
+            tabindex="0"
             type="button"
           >
             4
@@ -196,6 +205,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Jan 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             5
@@ -209,6 +219,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Jan 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             6
@@ -222,6 +233,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Jan 07 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             7
@@ -235,6 +247,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Jan 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             8
@@ -248,6 +261,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Jan 09 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             9
@@ -267,6 +281,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Jan 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             10
@@ -280,6 +295,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Mon Jan 11 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             11
@@ -293,6 +309,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Jan 12 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             12
@@ -306,6 +323,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Jan 13 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             13
@@ -319,6 +337,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Jan 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             14
@@ -332,6 +351,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Jan 15 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             15
@@ -345,6 +365,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Jan 16 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             16
@@ -364,6 +385,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Jan 17 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             17
@@ -377,6 +399,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Mon Jan 18 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             18
@@ -390,6 +413,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Jan 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             19
@@ -403,6 +427,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Jan 20 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             20
@@ -416,6 +441,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Jan 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             21
@@ -429,6 +455,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Jan 22 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             22
@@ -442,6 +469,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Jan 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             23
@@ -461,6 +489,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Jan 24 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             24
@@ -474,6 +503,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Mon Jan 25 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             25
@@ -487,6 +517,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Jan 26 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             26
@@ -500,6 +531,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Jan 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             27
@@ -513,6 +545,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Jan 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             28
@@ -526,6 +559,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Jan 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             29
@@ -539,6 +573,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Jan 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             30
@@ -558,6 +593,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sun Jan 31 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem"
             data-testid="visible-day"
+            tabindex="-1"
             type="button"
           >
             31
@@ -571,6 +607,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Mon Feb 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             1
@@ -584,6 +621,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Tue Feb 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             2
@@ -597,6 +635,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Wed Feb 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             3
@@ -610,6 +649,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Thu Feb 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             4
@@ -623,6 +663,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Fri Feb 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             5
@@ -636,6 +677,7 @@ exports[`DayPicker should render component 1`] = `
             aria-label="Sat Feb 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             class="day svelte-ehwpem outside-of-current-month"
             data-testid="hidden-day"
+            tabindex="-1"
             type="button"
           >
             6

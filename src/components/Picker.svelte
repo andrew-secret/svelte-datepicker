@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { IUtils } from "@date-io/core/IUtils";
-  import { createEventDispatcher, tick } from "svelte";
+  import type { view } from "../utils/view-types";
+  import { createEventDispatcher, setContext, tick } from "svelte";
   import DatePickerHeader from "./DatePickerHeader/DatePickerHeader.svelte";
   import DayPicker from "./DayPicker/DayPicker.svelte";
   import YearPicker from "./YearPicker/YearPicker.svelte";
@@ -8,9 +9,6 @@
   import { writable } from "svelte/store";
   import { handleFocusTrap } from "../utils/focus-trap";
   import "./global.css";
-
-  const defaultMinDate = new Date("1900-01-01");
-  const defaultMaxDate = new Date("2099-12-31");
 
   export let dateAdapter: IUtils<Date>;
   export let locale: string | object | undefined;
@@ -21,6 +19,11 @@
   export let isFocusTrapDisabled: boolean = false;
 
   const dispatch = createEventDispatcher();
+
+  const view = writable<view>("days");
+  setContext("view", view);
+
+  let datepicker: HTMLElement;
 
   if (locale) {
     dateAdapter.locale = locale;
@@ -67,7 +70,9 @@
   // TODO: Clean up this function and make it more DRY
   async function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
-    let items = [...document.querySelectorAll('.day[aria-hidden="false"]')];
+
+    await tick();
+    let items = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
     const currentIndex = current ? items.indexOf(current) : 0;
 
     /*
@@ -184,16 +189,16 @@
     activeElement.blur();
 
     if (needMonthSwitch) {
-      // because of two DOM manipulation we have to use tick
+      // because of DOM manipulation we have to use tick
       await tick();
-      newItems = [...document.querySelectorAll('.day[aria-hidden="false"]')];
+      newItems = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
       (newItems[0] as any).focus();
     }
 
     if (!needMonthSwitch) {
-      // because of two DOM manipulation we have to use tick
+      // because of DOM manipulation we have to use tick
       await tick();
-      newItems = [...document.querySelectorAll('.day[aria-hidden="false"]')];
+      newItems = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
       (newItems[index] as any).focus();
     }
   }
@@ -223,30 +228,37 @@
     value = dateAdapter.setYear(focusedDay, yearNumber);
     onDaySelect(value);
 
-    openView.setOpenView("days");
+    $view = "days";
 
     await tick();
-    const selectedDay = document.querySelector(".selected");
+    const selectedDay = datepicker.querySelector(".selected");
     if (selectedDay) {
       (selectedDay as HTMLButtonElement).focus();
     }
   }
+
+  function toggleYearPicker() {
+    if ($view === "days") {
+      $view = "years";
+    } else if ($view === "years") {
+      $view = "days";
+    }
+  }
 </script>
 
-<svelte:window on:keydown={handleKeyDown} />
-
-<div class="date-picker">
+<div class="date-picker" bind:this={datepicker} on:keydown={handleKeyDown}>
   <DatePickerHeader
     {dateAdapter}
     {currentMonth}
     {selectNextMonth}
     {selectPreviousMonth}
+    {toggleYearPicker}
   />
-  {#if $openView === "year"}
-    <YearPicker {dateAdapter} {currentMonth} {selectYear} />
+  {#if $view === "years"}
+    <YearPicker {dateAdapter} {currentMonth} {selectYear} {datepicker} />
   {/if}
 
-  {#if $openView === "days"}
+  {#if $view === "days"}
     <DayPicker
       {dateAdapter}
       {fullMonth}

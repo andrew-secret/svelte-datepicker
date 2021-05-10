@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { IUtils } from "@date-io/core/IUtils";
-  import { openView } from "../YearPicker/YearPickerStore";
+  import type { Writable } from "svelte/store";
+  import type { view } from "../../utils/view-types";
   import {
     defaultMaxDate,
     defaultMinDate,
   } from "../../utils/date-default-ranges";
+  import { getContext } from "svelte";
 
   export let dateAdapter: IUtils<Date>;
   export let currentMonth: Date;
@@ -12,14 +14,9 @@
   export let maxDate: Date = defaultMaxDate;
   export let selectPreviousMonth: () => void;
   export let selectNextMonth: () => void;
+  export let toggleYearPicker: () => void;
 
-  function toggleYearPicker() {
-    if ($openView === "days") {
-      openView.setOpenView("year");
-    } else if ($openView === "year") {
-      openView.setOpenView("days");
-    }
-  }
+  const view = getContext<Writable<view>>("view");
 
   $: shouldDisableMinDate = dateAdapter.isSameMonth(currentMonth, minDate);
   $: shouldDisableMaxDate = dateAdapter.isSameMonth(currentMonth, maxDate);
@@ -46,7 +43,7 @@
     <button
       class="month-switcher"
       type="button"
-      aria-pressed={$openView === "year"}
+      aria-pressed={$view === "years"}
       on:click={toggleYearPicker}
       data-testid="expand-button"
     >
@@ -63,7 +60,7 @@
       </span>
     </button>
   </div>
-  {#if $openView === "days"}
+  {#if $view === "days"}
     <div class="month-switcher-wrapper">
       <button
         disabled={shouldDisableMinDate}
@@ -117,6 +114,7 @@
   .year-switcher-wrapper {
     display: flex;
     align-items: center;
+    padding-left: 12px;
   }
 
   .year-switcher-label {
