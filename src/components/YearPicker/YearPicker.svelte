@@ -1,16 +1,22 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import type { IUtils } from "@date-io/core/IUtils";
+  import type { Writable } from "svelte/store";
+  import type { view } from "../../utils/view-types";
+  import { getContext, onMount, tick } from "svelte";
   import {
     defaultMaxDate,
     defaultMinDate,
   } from "../../utils/date-default-ranges";
+  import { handleFocusTrap } from "../../utils/focus-trap";
 
   export let dateAdapter: IUtils<Date>;
   export let minDate: Date = defaultMinDate;
   export let maxDate: Date = defaultMaxDate;
   export let currentMonth: Date;
+  export let datepicker: HTMLElement | null = null;
   export let selectYear: (year: Date) => void;
+
+  const view = getContext<Writable<view>>("view");
 
   let focusedYear: number;
   let years: HTMLElement;
@@ -24,13 +30,24 @@
     [...(years.childNodes as any)][index].focus();
   }
 
-  function handleKeyDown(event: KeyboardEvent, year: Date) {
+  async function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
     const yearItems = [...years.childNodes];
     const currentIndex = yearItems.indexOf(current);
-    const yearNumber = dateAdapter.getYear(year);
+    const yearNumber = dateAdapter.getYear(currentMonth);
 
     let newIndex: number;
+
+    if (!current || $view === "days") {
+      return;
+    }
+
+    await tick();
+    handleFocusTrap(event, {
+      element: datepicker,
+      classNames: `.month-switcher:not([disabled]), .year-button:not([tabindex='-1']`,
+      isFocusTrapDisabled: false,
+    });
 
     switch (event.key) {
       case "ArrowUp":
@@ -62,6 +79,12 @@
     }
   }
 
+  function handleSelectClass(currentMonth: Date, date: Date): boolean {
+    const currentMonthYear = dateAdapter.getYear(currentMonth);
+    const year = dateAdapter.getYear(date);
+    return currentMonthYear === year;
+  }
+
   onMount(() => {
     const selectedYear = [...years.childNodes].filter((year: HTMLElement) =>
       year.classList.contains("selected")
@@ -70,24 +93,23 @@
       (selectedYear[0] as HTMLElement).focus();
     }
   });
-
-  function handleSelectClass(currentMonth: Date, date: Date): boolean {
-    const currentMonthYear = dateAdapter.getYear(currentMonth);
-    const year = dateAdapter.getYear(date);
-    return currentMonthYear === year;
-  }
 </script>
 
-<div class="year-picker" bind:this={years}>
-  {#each dateAdapter.getYearRange(minDate, maxDate) as year, i}
+<div
+  class="year-picker"
+  bind:this={years}
+  on:keydown={handleKeyDown}
+  tabindex="-1"
+>
+  {#each dateAdapter.getYearRange(minDate, maxDate) as year}
     <button
       class="year-button"
       class:selected={handleSelectClass(currentMonth, year)}
       type="button"
+      tabindex={handleSelectClass(currentMonth, year) ? 0 : -1}
       aria-pressed={handleSelectClass(currentMonth, year)}
       arial-label={year}
       on:focus={() => handleYearFocus(dateAdapter.getYear(year))}
-      on:keydown={(event) => handleKeyDown(event, year)}
       on:click={() => selectYear(year)}
     >
       {dateAdapter.format(year, "year")}

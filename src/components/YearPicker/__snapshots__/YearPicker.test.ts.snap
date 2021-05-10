@@ -5,11 +5,13 @@ exports[`YearPicker should render component 1`] = `
   <div>
     <div
       class="year-picker svelte-1qomeje"
+      tabindex="-1"
     >
       <button
         aria-pressed="false"
         arial-label="Mon Jan 01 1900 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1900
@@ -19,6 +21,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1901 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1901
@@ -28,6 +31,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1902 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1902
@@ -37,6 +41,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1903 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1903
@@ -46,6 +51,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1904 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1904
@@ -55,6 +61,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1905 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1905
@@ -64,6 +71,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1906 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1906
@@ -73,6 +81,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1907 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1907
@@ -82,6 +91,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1908 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1908
@@ -91,6 +101,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1909 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1909
@@ -100,6 +111,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1910 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1910
@@ -109,6 +121,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1911 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1911
@@ -118,6 +131,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1912 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1912
@@ -127,6 +141,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1913 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1913
@@ -136,6 +151,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1914 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1914
@@ -145,6 +161,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1915 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1915
@@ -154,6 +171,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1916 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1916
@@ -163,6 +181,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1917 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1917
@@ -172,6 +191,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1918 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1918
@@ -181,6 +201,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1919 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1919
@@ -190,6 +211,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1920 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1920
@@ -199,6 +221,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1921 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1921
@@ -208,6 +231,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1922 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1922
@@ -217,6 +241,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1923 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1923
@@ -226,6 +251,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1924 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1924
@@ -235,6 +261,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1925 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1925
@@ -244,6 +271,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1926 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1926
@@ -253,6 +281,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1927 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1927
@@ -262,6 +291,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1928 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1928
@@ -271,6 +301,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1929 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1929
@@ -280,6 +311,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1930 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1930
@@ -289,6 +321,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1931 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1931
@@ -298,6 +331,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1932 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1932
@@ -307,6 +341,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1933 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1933
@@ -316,6 +351,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1934 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1934
@@ -325,6 +361,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1935 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1935
@@ -334,6 +371,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1936 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1936
@@ -343,6 +381,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1937 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1937
@@ -352,6 +391,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1938 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1938
@@ -361,6 +401,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1939 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1939
@@ -370,6 +411,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1940 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1940
@@ -379,6 +421,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1941 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1941
@@ -388,6 +431,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1942 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1942
@@ -397,6 +441,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1943 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1943
@@ -406,6 +451,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1944 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1944
@@ -415,6 +461,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1945 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1945
@@ -424,6 +471,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1946 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1946
@@ -433,6 +481,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1947 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1947
@@ -442,6 +491,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1948 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1948
@@ -451,6 +501,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1949 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1949
@@ -460,6 +511,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1950 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1950
@@ -469,6 +521,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1951 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1951
@@ -478,6 +531,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1952 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1952
@@ -487,6 +541,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1953 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1953
@@ -496,6 +551,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1954 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1954
@@ -505,6 +561,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1955 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1955
@@ -514,6 +571,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1956 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1956
@@ -523,6 +581,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1957 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1957
@@ -532,6 +591,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1958 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1958
@@ -541,6 +601,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1959 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1959
@@ -550,6 +611,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1960 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1960
@@ -559,6 +621,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1961 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1961
@@ -568,6 +631,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1962 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1962
@@ -577,6 +641,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1963 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1963
@@ -586,6 +651,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1964 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1964
@@ -595,6 +661,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1965 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1965
@@ -604,6 +671,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1966 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1966
@@ -613,6 +681,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1967 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1967
@@ -622,6 +691,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1968 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1968
@@ -631,6 +701,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1969 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1969
@@ -640,6 +711,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1970
@@ -649,6 +721,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1971 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1971
@@ -658,6 +731,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1972 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1972
@@ -667,6 +741,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1973 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1973
@@ -676,6 +751,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1974 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1974
@@ -685,6 +761,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1975 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1975
@@ -694,6 +771,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1976 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1976
@@ -703,6 +781,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1977 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1977
@@ -712,6 +791,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1978 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1978
@@ -721,6 +801,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1979 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1979
@@ -730,6 +811,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1980 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1980
@@ -739,6 +821,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1981 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1981
@@ -748,6 +831,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1982 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1982
@@ -757,6 +841,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1983 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1983
@@ -766,6 +851,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1984 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1984
@@ -775,6 +861,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1985 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1985
@@ -784,6 +871,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1986 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1986
@@ -793,6 +881,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1987 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1987
@@ -802,6 +891,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1988 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1988
@@ -811,6 +901,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1989 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1989
@@ -820,6 +911,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1990 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1990
@@ -829,6 +921,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 1991 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1991
@@ -838,6 +931,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1992 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1992
@@ -847,6 +941,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1993 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1993
@@ -856,6 +951,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 1994 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1994
@@ -865,6 +961,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 1995 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1995
@@ -874,6 +971,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 1996 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1996
@@ -883,6 +981,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 1997 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1997
@@ -892,6 +991,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 1998 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1998
@@ -901,6 +1001,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 1999 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         1999
@@ -910,6 +1011,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2000 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2000
@@ -919,6 +1021,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2001 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2001
@@ -928,6 +1031,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2002 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2002
@@ -937,6 +1041,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2003 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2003
@@ -946,6 +1051,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2004 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2004
@@ -955,6 +1061,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2005 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2005
@@ -964,6 +1071,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2006 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2006
@@ -973,6 +1081,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2007 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2007
@@ -982,6 +1091,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2008 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2008
@@ -991,6 +1101,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2009 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2009
@@ -1000,6 +1111,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2010 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2010
@@ -1009,6 +1121,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2011 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2011
@@ -1018,6 +1131,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2012 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2012
@@ -1027,6 +1141,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2013 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2013
@@ -1036,6 +1151,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2014 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2014
@@ -1045,6 +1161,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2015 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2015
@@ -1054,6 +1171,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2016 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2016
@@ -1063,6 +1181,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2017 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2017
@@ -1072,6 +1191,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2018 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2018
@@ -1081,6 +1201,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2019 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2019
@@ -1090,6 +1211,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2020
@@ -1099,6 +1221,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="true"
         arial-label="Fri Jan 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje selected"
+        tabindex="0"
         type="button"
       >
         2021
@@ -1108,6 +1231,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2022 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2022
@@ -1117,6 +1241,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2023
@@ -1126,6 +1251,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2024 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2024
@@ -1135,6 +1261,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2025
@@ -1144,6 +1271,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2026
@@ -1153,6 +1281,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2027 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2027
@@ -1162,6 +1291,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2028 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2028
@@ -1171,6 +1301,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2029 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2029
@@ -1180,6 +1311,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2030 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2030
@@ -1189,6 +1321,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2031 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2031
@@ -1198,6 +1331,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2032 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2032
@@ -1207,6 +1341,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2033 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2033
@@ -1216,6 +1351,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2034 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2034
@@ -1225,6 +1361,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2035 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2035
@@ -1234,6 +1371,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2036 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2036
@@ -1243,6 +1381,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2037 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2037
@@ -1252,6 +1391,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2038 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2038
@@ -1261,6 +1401,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2039 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2039
@@ -1270,6 +1411,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2040 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2040
@@ -1279,6 +1421,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2041 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2041
@@ -1288,6 +1431,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2042 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2042
@@ -1297,6 +1441,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2043 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2043
@@ -1306,6 +1451,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2044 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2044
@@ -1315,6 +1461,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2045 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2045
@@ -1324,6 +1471,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2046 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2046
@@ -1333,6 +1481,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2047 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2047
@@ -1342,6 +1491,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2048 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2048
@@ -1351,6 +1501,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2049 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2049
@@ -1360,6 +1511,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2050 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2050
@@ -1369,6 +1521,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2051 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2051
@@ -1378,6 +1531,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2052 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2052
@@ -1387,6 +1541,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2053 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2053
@@ -1396,6 +1551,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2054 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2054
@@ -1405,6 +1561,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2055 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2055
@@ -1414,6 +1571,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2056 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2056
@@ -1423,6 +1581,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2057 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2057
@@ -1432,6 +1591,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2058 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2058
@@ -1441,6 +1601,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2059 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2059
@@ -1450,6 +1611,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2060 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2060
@@ -1459,6 +1621,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2061 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2061
@@ -1468,6 +1631,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2062 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2062
@@ -1477,6 +1641,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2063 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2063
@@ -1486,6 +1651,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2064 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2064
@@ -1495,6 +1661,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2065 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2065
@@ -1504,6 +1671,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2066 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2066
@@ -1513,6 +1681,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2067 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2067
@@ -1522,6 +1691,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2068 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2068
@@ -1531,6 +1701,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2069 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2069
@@ -1540,6 +1711,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2070 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2070
@@ -1549,6 +1721,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2071 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2071
@@ -1558,6 +1731,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2072 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2072
@@ -1567,6 +1741,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2073 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2073
@@ -1576,6 +1751,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2074 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2074
@@ -1585,6 +1761,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2075 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2075
@@ -1594,6 +1771,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2076 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2076
@@ -1603,6 +1781,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2077 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2077
@@ -1612,6 +1791,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2078 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2078
@@ -1621,6 +1801,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2079 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2079
@@ -1630,6 +1811,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2080 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2080
@@ -1639,6 +1821,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2081 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2081
@@ -1648,6 +1831,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2082 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2082
@@ -1657,6 +1841,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2083 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2083
@@ -1666,6 +1851,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2084 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2084
@@ -1675,6 +1861,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2085 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2085
@@ -1684,6 +1871,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2086 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2086
@@ -1693,6 +1881,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2087 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2087
@@ -1702,6 +1891,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2088 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2088
@@ -1711,6 +1901,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2089 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2089
@@ -1720,6 +1911,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2090 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2090
@@ -1729,6 +1921,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Mon Jan 01 2091 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2091
@@ -1738,6 +1931,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2092 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2092
@@ -1747,6 +1941,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2093 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2093
@@ -1756,6 +1951,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Fri Jan 01 2094 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2094
@@ -1765,6 +1961,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sat Jan 01 2095 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2095
@@ -1774,6 +1971,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Sun Jan 01 2096 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2096
@@ -1783,6 +1981,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Tue Jan 01 2097 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2097
@@ -1792,6 +1991,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Wed Jan 01 2098 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2098
@@ -1801,6 +2001,7 @@ exports[`YearPicker should render component 1`] = `
         aria-pressed="false"
         arial-label="Thu Jan 01 2099 00:00:00 GMT+0000 (Coordinated Universal Time)"
         class="year-button svelte-1qomeje"
+        tabindex="-1"
         type="button"
       >
         2099

@@ -4,14 +4,14 @@ exports[`DatePickerHeader should render component 1`] = `
 <body>
   <div>
     <div
-      class="datepicker-header svelte-1dicy1x"
+      class="datepicker-header svelte-gpn5i8"
     >
       <div
-        class="year-switcher-wrapper svelte-1dicy1x"
+        class="year-switcher-wrapper svelte-gpn5i8"
       >
         <time
           aria-live="polite"
-          class="year-switcher-label svelte-1dicy1x"
+          class="year-switcher-label svelte-gpn5i8"
           data-testid="selected-month"
           datetime="4 Jan 2021"
         >
@@ -20,7 +20,7 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <time
           aria-live="polite"
-          class="year-switcher-label svelte-1dicy1x"
+          class="year-switcher-label svelte-gpn5i8"
           data-testid="selected-year"
           datetime="4 Jan 2021"
         >
@@ -29,12 +29,12 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <button
           aria-pressed="false"
-          class="month-switcher svelte-1dicy1x"
+          class="month-switcher svelte-gpn5i8"
           data-testid="expand-button"
           type="button"
         >
           <span
-            class="month-switcher-label svelte-1dicy1x"
+            class="month-switcher-label svelte-gpn5i8"
           >
             <svg
               aria-hidden="true"
@@ -51,51 +51,6 @@ exports[`DatePickerHeader should render component 1`] = `
         </button>
       </div>
        
-      <div
-        class="month-switcher-wrapper svelte-1dicy1x"
-      >
-        <button
-          aria-label="previous month"
-          class="month-switcher previous-month svelte-1dicy1x"
-        >
-          <span
-            class="month-switcher-label svelte-1dicy1x"
-          >
-            <svg
-              aria-hidden="true"
-              data-testid="ArrowLeftIcon"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-              />
-            </svg>
-          </span>
-        </button>
-         
-        <button
-          aria-label="next month"
-          class="month-switcher next-month svelte-1dicy1x"
-        >
-          <span
-            class="month-switcher-label svelte-1dicy1x"
-          >
-            <svg
-              aria-hidden="true"
-              data-testid="ArrowRightIcon"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
     </div>
   </div>
 </body>

@@ -16,7 +16,6 @@ describe('DayPicker', () => {
         focusedDay: date,
         currentMonthNumber,
         onDaySelect: jest.fn(),
-        handleKeyDown: jest.fn(),
         handleFocus: jest.fn(),
     }
 

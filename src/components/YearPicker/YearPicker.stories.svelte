@@ -7,7 +7,11 @@
 <Meta title="Example/YearPicker" component={YearPicker} />
 
 <Template>
-  <YearPicker dateAdapter={dateFnsUtils} currentMonth={dateFnsUtils.date()} />
+  <YearPicker
+    dateAdapter={dateFnsUtils}
+    currentMonth={dateFnsUtils.date()}
+    selectYear={() => null}
+  />
 </Template>
 
 <Story name="Default" />

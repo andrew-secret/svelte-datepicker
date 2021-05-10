@@ -6,10 +6,22 @@
   export let currentMonthNumber: number;
   export let focusedDay: Date;
   export let onDaySelect: (day: Date) => void;
-  export let handleKeyDown: (event: Event, date: Date) => Promise<void>;
   export let handleFocus: (focusedDay: Date) => void;
 
   let currentDay = dateAdapter.date() as Date;
+
+  function handleTabIndex(day: Date): number {
+    const isSelected = selectedDates.some(
+      (selectedDate) => selectedDate && dateAdapter.isSameDay(selectedDate, day)
+    );
+
+    const isFocused = dateAdapter.isSameDay(day, focusedDay);
+
+    if (isSelected || isFocused) {
+      return 0;
+    }
+    return -1;
+  }
 </script>
 
 <div class="weekdays">
@@ -34,6 +46,7 @@
             data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
               ? "hidden-day"
               : "visible-day"}
+            tabindex={handleTabIndex(day)}
             class:today={dateAdapter.isSameDay(day, currentDay)}
             class:selected={selectedDates.some(
               (selectedDate) =>
@@ -45,7 +58,6 @@
               onDaySelect(day);
             }}
             on:focus={() => handleFocus(day)}
-            on:keydown={(event) => handleKeyDown(event, day)}
             autofocus={focusedDay !== null &&
               dateAdapter.isSameDay(day, focusedDay)}
           >

@@ -3,6 +3,7 @@ import { render } from '@testing-library/svelte';
 import { enGB, fr, ru } from 'date-fns/locale';
 import { dateFnsUtils } from '../../utils/date-fns-adapter';
 import DatePickerHeader from './DatePickerHeader.svelte';
+import Picker from '../Picker.svelte';
 
 describe('DatePickerHeader', () => {
     beforeEach(() => {
@@ -10,14 +11,17 @@ describe('DatePickerHeader', () => {
     })
     const currentMonth = new Date('2021-01-04');
 
+    const datePickerHeaderProps = {
+        dateAdapter: dateFnsUtils,
+        currentMonth,
+        selectPreviousMonth: jest.fn(),
+        selectNextMonth: jest.fn(),
+        toggleYearPicker: jest.fn(),
+    }
+
     it('should render component', () => {
         const { container } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
+            props: datePickerHeaderProps,
         });
 
         expect(container).toMatchSnapshot();
@@ -25,12 +29,7 @@ describe('DatePickerHeader', () => {
 
     it('should show selected year and month', () => {
         const { getByTestId } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
+            props: datePickerHeaderProps
         });
 
         const selectedYear = getByTestId('selected-year');
@@ -40,63 +39,10 @@ describe('DatePickerHeader', () => {
         expect(selectedMonth).toHaveTextContent('January');
     });
 
-    it('should render w/ disabled previous month button', () => {
-        const minDate = new Date('1900-01-01');
-        const { getByLabelText } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth: minDate,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
-        });
-
-        const previousMonthButton = getByLabelText('previous month');
-
-        expect(previousMonthButton).toBeDisabled();
-    });
-
-    it('should render w/ disabled previous month button', () => {
-        const minDate = new Date('1900-01-01');
-        const { getByLabelText } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth: minDate,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
-        });
-
-        const previousMonthButton = getByLabelText('previous month');
-
-        expect(previousMonthButton).toBeDisabled();
-    });
-
-    it('should render w/ disabled next month button', () => {
-        const maxDate = new Date('2099-12-31');
-        const { getByLabelText } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth: maxDate,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
-        });
-
-        const nextMonthButton = getByLabelText('next month');
-
-        expect(nextMonthButton).toBeDisabled();
-    });
-
     it('should show selected month w/ french locale', () => {
         dateFnsUtils.locale = fr;
         const { getByTestId } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
+            props: datePickerHeaderProps,
         });
 
         const selectedMonth = getByTestId('selected-month');
@@ -107,12 +53,7 @@ describe('DatePickerHeader', () => {
     it('should show selected month w/ russian locale', () => {
         dateFnsUtils.locale = ru;
         const { getByTestId } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
+            props: datePickerHeaderProps,
         });
 
         const selectedMonth = getByTestId('selected-month');
@@ -121,14 +62,8 @@ describe('DatePickerHeader', () => {
     });
 
     it('should show selected month w/ english locale', () => {
-
         const { getByTestId } = render(DatePickerHeader, {
-            props: {
-                dateAdapter: dateFnsUtils,
-                currentMonth,
-                selectPreviousMonth: jest.fn(),
-                selectNextMonth: jest.fn(),
-            }
+            props: datePickerHeaderProps
         });
 
         const selectedMonth = getByTestId('selected-month');

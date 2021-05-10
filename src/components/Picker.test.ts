@@ -3,13 +3,8 @@ import { render, fireEvent, screen, waitFor, createEvent } from '@testing-librar
 import { enUS } from 'date-fns/locale';
 import { dateFnsUtils } from '../utils/date-fns-adapter'
 import Picker from './Picker.svelte';
-import { openView } from './YearPicker/YearPickerStore'
 
 describe('Picker', () => {
-    beforeEach(() => {
-        openView.setOpenView('days');
-      });
-
     const value = new Date('2021-04-30');
     const props = {
         dateAdapter: dateFnsUtils,
