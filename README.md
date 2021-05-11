@@ -7,41 +7,43 @@
 
 # Svelte inclusive date picker ⚠️ alpha version ⚠️
 
-A lightweight and inclusive datepicker build with svelte. You already use specific date library in your project? That's fine! You can decide which date management library you want to use. It supports `date-fns`, `dayjs`, `luxon` and `moment` (even though its deprecated). The current implementation contains a day and year picker without inputs or modals.
+A lightweight and inclusive date picker build with svelte. Do you already use a specific date library in your project? That's fine! You can decide which date management library you want to use. It supports `date-fns`, `dayjs`, `luxon` and `moment` (even though its in maintenance mode now). The current implementation contains a day and year picker without inputs or modals. This project uses `date-io` as an abstraction over common date management libraries. That makes this component more convenient for consumers that are already using a specific date management library.
 
-Just keep in mind that this is still a alpha version and things might change over time.
+Just keep in mind that this is still a alpha version and things might change over time. 🏗
 
 ## Prerequisites
 
+- Download and install latest Version of [NodeJS](https://nodejs.org/en/) (`>=14.16.x`). If node was installed via [Homebrew](https://brew.sh/) you just need to update it.
 - Works best with: Svelte `>=v3.38.1`
 
 ## Installation
 
-- **IMPORTANT**: Install date management library of your choice:
-  - `date-fns`
-  - `dayjs`
-  - `luxon`
-  - `moment` (deprecated)
+- **IMPORTANT**: Install date management library of your choice in your project:
+  - [`date-fns`](https://www.npmjs.com/package/date-fns)
+  - [`dayjs`](https://www.npmjs.com/package/dayjs)
+  - [`luxon`](https://www.npmjs.com/package/luxon)
+  - [`moment`](https://www.npmjs.com/package/moment)
 
 The package can be installed via [npm](https://github.com/npm/cli):
 
 ```bash
-npm install svelte-datepicker
+# install svelte-datepicker with alpha dist-tag and date adapter (e.g. @date-io/<your-date-management-library>)
+npm install svelte-datepicker@alpha && @date-io/date-fns
 ```
 
 ## Usage
 
-Now we have to important the **Picker** component and a **dateAdapter**
+Now we have to important the **DatePicker** component and a **dateAdapter** which comes from `date-io`
 
 ```svelte
 <!-- App.svelte -->
 <script>
-  import { Picker, DateFnsAdapter } from "svelte-inclusive-datepicker";
-  import "svelte-inclusive-datepicker/dist/index.mjs.css";
+  import DateFnsAdapter from "@date-io/date-fns";
+  import { DatePicker } from "svelte-datepicker";
 
   const dateFnsAdapter = new DateFnsAdapter();
 
-  export let value = dateFnsAdapter.date();
+  let value = dateFnsAdapter.date();
 
   function handleSelectDay(e) {
     value = e.detail;
@@ -49,35 +51,168 @@ Now we have to important the **Picker** component and a **dateAdapter**
 </script>
 
 <main>
-  <Picker
+  <DatePicker
     {value}
-    dateAdapter="{dateFnsAdapter}"
-    on:selectDay="{handleSelectDay}"
+    dateAdapter={dateFnsAdapter}
+    on:selectDay={handleSelectDay}
   />
 </main>
 ```
 
 ## Properties
 
-TODO: some properties...
+| **Name**              | **Type**                        | **Default**             | **Description**                                                                                                                                                                                 | **Required** |
+| --------------------- | ------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `dateAdapter`         | `IUtils<Date>`                  | undefined               | `date-io` adapter instance                                                                                                                                                                      | yes          |
+| `locale`              | `string \| object \| undefined` | undefined               | `date-io` adapter instance                                                                                                                                                                      | no           |
+| `value`               | `Date`                          | `dateFnsAdapter.date()` | `value` defaults to the current date                                                                                                                                                            | yes          |
+| `focusedDay`          | `Date`                          | `dateFnsAdapter.date()` | `focusedDay` defaults to the same date as `value`                                                                                                                                               | no           |
+| `minDate`             | `Date`                          | `defaultMinDate`        | `defaultMinDate` is set to `new Date("1900-01-01")`                                                                                                                                             | no           |
+| `maxDate`             | `Date`                          | `defaultMaxDate`        | `defaultMaxDate` is set to `new Date("2099-12-31")`                                                                                                                                             | no           |
+| `isFocusTrapDisabled` | `boolean`                       | `false`                 | If `isFocusTrapDisabled` is set to `true`, it's possible to navigate to other elements. Nevertheless, it's recommended to trap the focus if the date picker is used in modals or within inputs. | no           |
 
-## Events
+More props comming soon...
 
-TODO: some events...
+## Custom Events
+
+In order to update the `value` property you can use the `on:selectDay` custom event handler, which receive the `event` with a `details` property inside.
+
+| **Name**       | **Required** |
+| -------------- | ------------ |
+| `on:selectDay` | yes          |
+
+Example:
+
+```svelte
+<!-- current date -->
+let value = dateFnsAdapter.date();
+
+<!-- it updates value property -->
+function handleSelectDay(event) {
+  value = event.detail
+}
+
+<DatePicker
+  {value}
+  dateAdapter={dateFnsAdapter}
+  on:selectDay={handleSelectDay}
+/>
+```
 
 ## Accessibility
 
+This date picker libary is trying to be more inclusive. Therefore I highly encoured everyone to contribute or give any feedback regarding accessibility. This date picker will be developed piece by piece and improved from accessibility perspective over time. Help me to build this together!
+
+**Note:** This topic will be always prioritized over new features or other enhancements.
+
 ### Keyboard support day picker
 
-description
+- Left: Move to the previous day.
+- Right: Move to the next day.
+- Up: Move to the previous week.
+- Down: Move to the next week.
 
 ### Keyboard support year picker
 
-description
+- Left: Move to the previous day.
+- Right: Move to the next day.
+- Up: Move to the previous week.
+- Down: Move to the next week.
 
 ## Styling
 
-TODO: describe styling
+Of course, you want to customize the date picker. This can be achieved by using CSS custom properties (aka CSS variables).
+
+First I want to show you all CSS custom properties which are applied to the `:root` and scoped with `--sdp`:
+
+```css
+--sdp-border-radius: 4px;
+
+--sdp-font-family: "Roboto", sans-serif;
+--sdp-font-weight: 400;
+--sdp-base-font-color: rgba(0, 0, 0, 0.87);
+
+--sdp-accent-color: rgb(255, 62, 0);
+
+--sdp-hover-bg-color: rgba(238, 238, 238, 0.625);
+--sdp-hover-color: rgba(0, 0, 0, 0.87);
+
+--sdp-bg-focus-color: var(--sdp-accent-color);
+--sdp-focus-color: rgba(0, 0, 0, 0.87);
+
+--sdp-bg-active-color: var(--sdp-accent-color);
+--sdp-active-color: rgb(255, 255, 255);
+
+--sdp-bg-selected-color: var(--sdp-accent-color);
+--sdp-selected-color: rgb(255, 255, 255);
+
+--sdp-bg-color: rgb(255, 255, 255);
+--sdp-btn-bg-color: rgb(255, 255, 255);
+
+--sdp-color-grey-500: rgb(80, 80, 80);
+--sdp-color-grey-400: rgb(133, 133, 133);
+--sdp-color-grey-300: rgb(216, 216, 216);
+```
+
+We got two different ways now to change those values to apply your styles.
+
+- Apply new values through the `:root` element:
+
+```svelte
+<!-- YourApp.svelte -->
+<DatePicker
+  dateAdapter="{dateFnsAdapter}"
+  {value}
+  on:selectDay="{handleSelectDay2}"
+/>
+
+<style>
+  :root {
+    --sdp-accent-color: purple;
+    --sdp-border-radius: 40px;
+  }
+</style>
+```
+
+- Just pass CSS custom properties directly to the date picker component via props:
+
+```svelte
+<!-- YourApp.svelte -->
+
+  <DatePicker
+    dateAdapter={dateFnsAdapter}
+    {value}
+    on:selectDay={handleSelectDay2}
+    --sdp-border-radius="40px"
+    --sdp-bg-focus-color="purple"
+  />
+```
+
+### Caveats
+
+This approach looks pretty neat, but it hast two main limiations regarding styling and compatibility.
+
+- works only with Svelte `>=v3.38.1`
+- at the moment it's not possible to change a value of a CSS custom property, which has another CSS custom property as a value
+
+```css
+--sdp-accent-color: rgb(255, 62, 0);
+
+--sdp-bg-focus-color: var(--sdp-accent-color);
+--sdp-bg-active-color: var(--sdp-accent-color);
+--sdp-bg-selected-color: var(--sdp-accent-color);
+```
+
+```svelte
+<!-- YourApp.svelte this won't work ❌ -->
+
+<DatePicker
+  dateAdapter="{dateFnsAdapter}"
+  {value}
+  on:selectDay="{handleSelectDay2}"
+  --sdp-accent-color="purple"
+/>
+```
 
 ## Localization
 
@@ -103,3 +238,10 @@ npm run storybook
 # build
 npm run build
 ```
+
+### Upcoming Features
+
+- selectable date range
+- callback functions for seveleral actions (e.g. switch to previous year)
+- animations with motion reduced breakpoint
+- Ideas?
