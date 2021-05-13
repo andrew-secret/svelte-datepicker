@@ -3,15 +3,11 @@
   import type { Writable } from "svelte/store";
   import type { view } from "../../utils/view-types";
   import { getContext, onMount, tick } from "svelte";
-  import {
-    defaultMaxDate,
-    defaultMinDate,
-  } from "../../utils/date-default-ranges";
   import { handleFocusTrap } from "../../utils/focus-trap";
 
   export let dateAdapter: IUtils<Date>;
-  export let minDate: Date = defaultMinDate;
-  export let maxDate: Date = defaultMaxDate;
+  export let minDate: Date;
+  export let maxDate: Date;
   export let currentMonth: Date;
   export let datepicker: HTMLElement | null = null;
   export let selectYear: (year: Date) => void;
