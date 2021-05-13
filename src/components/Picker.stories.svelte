@@ -16,8 +16,10 @@
     <a href="/">a really useless link</a>
     <time>{value}</time>
     <Picker
-      dateAdapter={dateFnsUtils}
       {value}
+      dateAdapter={dateFnsUtils}
+      minDate={new Date("2020-05-05")}
+      maxDate={new Date("2021-05-30")}
       on:selectDay={(e) => {
         value = e.detail;
       }}

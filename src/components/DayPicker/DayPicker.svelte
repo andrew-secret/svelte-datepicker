@@ -5,10 +5,21 @@
   export let selectedDates: Date[];
   export let currentMonthNumber: number;
   export let focusedDay: Date;
+  export let minDate: Date;
+  export let maxDate: Date;
   export let onDaySelect: (day: Date) => void;
   export let handleFocus: (focusedDay: Date) => void;
 
   let currentDay = dateAdapter.date() as Date;
+
+  function handleDisabledDay(day: Date): boolean {
+    const isDayDisabled =
+      !dateAdapter.isWithinRange(day, [minDate, maxDate]) &&
+      !dateAdapter.isSameDay(day, minDate) &&
+      !dateAdapter.isSameDay(day, maxDate);
+
+    return isDayDisabled;
+  }
 
   function handleTabIndex(day: Date): number {
     const isSelected = selectedDates.some(
@@ -43,6 +54,7 @@
             aria-label={day}
             type="button"
             class="day"
+            disabled={handleDisabledDay(day)}
             data-testid={dateAdapter.getMonth(day) !== currentMonthNumber
               ? "hidden-day"
               : "visible-day"}
@@ -120,6 +132,11 @@
       outline: none;
       color: var(--sdp-focus-color);
       box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
+    }
+
+    &:disabled {
+      opacity: 0.35;
+      pointer-events: none;
     }
   }
 

@@ -2,16 +2,12 @@
   import type { IUtils } from "@date-io/core/IUtils";
   import type { Writable } from "svelte/store";
   import type { view } from "../../utils/view-types";
-  import {
-    defaultMaxDate,
-    defaultMinDate,
-  } from "../../utils/date-default-ranges";
   import { getContext } from "svelte";
 
   export let dateAdapter: IUtils<Date>;
   export let currentMonth: Date;
-  export let minDate: Date = defaultMinDate;
-  export let maxDate: Date = defaultMaxDate;
+  export let minDate: Date;
+  export let maxDate: Date;
   export let selectPreviousMonth: () => void;
   export let selectNextMonth: () => void;
   export let toggleYearPicker: () => void;

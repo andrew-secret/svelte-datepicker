@@ -8,7 +8,6 @@
   import { defaultMinDate, defaultMaxDate } from "../utils/date-default-ranges";
   import { writable } from "svelte/store";
   import { handleFocusTrap } from "../utils/focus-trap";
-  import "./global.css";
 
   export let dateAdapter: IUtils<Date>;
   export let locale: string | object | undefined;
@@ -101,14 +100,26 @@
           dateAdapter.getPreviousMonth(minDate)
         );
 
-        if (isWeekOutOfMinDateRange) {
+        // TODO This is a bad naming and has to be changed
+        const isDayOutOfMinDateRange = !dateAdapter.isWithinRange(
+          dateAdapter.startOfDay(previousWeek),
+          [dateAdapter.startOfDay(minDate), dateAdapter.startOfDay(maxDate)]
+        );
+
+        if (isWeekOutOfMinDateRange || isDayOutOfMinDateRange) {
           return;
         }
 
         // This could perform a month switch
         changeFocusedDay(dateAdapter.addDays(focusedDay, -7));
         if (needMonthSwitch) {
-          newIndex = 0;
+          /*
+            If you switch to the previous month the focus 
+            should be applied to the last day
+          */
+          await tick();
+          items = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
+          newIndex = items.length - 1;
         } else {
           newIndex = (currentIndex + items.length - 7) % items.length;
         }
@@ -123,7 +134,12 @@
           dateAdapter.getNextMonth(maxDate)
         );
 
-        if (isWeekOutOfMaxDateRange) {
+        const isDayOutOfMaxDateRange = !dateAdapter.isWithinRange(
+          dateAdapter.startOfDay(nextWeek),
+          [dateAdapter.startOfDay(minDate), dateAdapter.startOfDay(maxDate)]
+        );
+
+        if (isWeekOutOfMaxDateRange || isDayOutOfMaxDateRange) {
           return;
         }
 
@@ -140,6 +156,7 @@
         event.preventDefault();
         break;
       case "ArrowLeft":
+        // TODO this early return needs to be in sync with minDate and the disbaled button in the daypicker
         if (dateAdapter.isSameDay(focusedDay, minDate)) {
           return;
         }
@@ -147,7 +164,13 @@
         // This could perform a month switch
         changeFocusedDay(dateAdapter.addDays(focusedDay, -1));
         if (needMonthSwitch) {
-          newIndex = 0;
+          /*
+            If you switch to the previous month the focus 
+            should be applied to the last day
+          */
+          await tick();
+          items = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
+          newIndex = items.length - 1;
         } else {
           newIndex = (currentIndex + items.length - 1) % items.length;
         }
@@ -237,29 +260,41 @@
     }
   }
 
-  function toggleYearPicker() {
+  function toggleYearPicker(): void {
     if ($view === "days") {
       $view = "years";
     } else if ($view === "years") {
       $view = "days";
     }
   }
+
 </script>
 
 <div class="date-picker" bind:this={datepicker} on:keydown={handleKeyDown}>
   <DatePickerHeader
     {dateAdapter}
     {currentMonth}
+    {minDate}
+    {maxDate}
     {selectNextMonth}
     {selectPreviousMonth}
     {toggleYearPicker}
   />
   {#if $view === "years"}
-    <YearPicker {dateAdapter} {currentMonth} {selectYear} {datepicker} />
+    <YearPicker
+      {minDate}
+      {maxDate}
+      {dateAdapter}
+      {currentMonth}
+      {selectYear}
+      {datepicker}
+    />
   {/if}
 
   {#if $view === "days"}
     <DayPicker
+      {minDate}
+      {maxDate}
       {dateAdapter}
       {fullMonth}
       {selectedDates}
@@ -272,6 +307,35 @@
 </div>
 
 <style>
+  :global(:root) {
+    --sdp-border-radius: 4px;
+
+    --sdp-font-family: "Roboto", sans-serif;
+    --sdp-font-weight: 400;
+    --sdp-base-font-color: rgba(0, 0, 0, 0.87);
+
+    --sdp-accent-color: rgb(255, 62, 0);
+
+    --sdp-hover-bg-color: rgba(238, 238, 238, 0.625);
+    --sdp-hover-color: rgba(0, 0, 0, 0.87);
+
+    --sdp-bg-focus-color: var(--sdp-accent-color);
+    --sdp-focus-color: rgba(0, 0, 0, 0.87);
+
+    --sdp-bg-active-color: var(--sdp-accent-color);
+    --sdp-active-color: rgb(255, 255, 255);
+
+    --sdp-bg-selected-color: var(--sdp-accent-color);
+    --sdp-selected-color: rgb(255, 255, 255);
+
+    --sdp-bg-color: rgb(255, 255, 255);
+    --sdp-btn-bg-color: rgb(255, 255, 255);
+
+    --sdp-color-grey-500: rgb(80, 80, 80);
+    --sdp-color-grey-400: rgb(133, 133, 133);
+    --sdp-color-grey-300: rgb(216, 216, 216);
+  }
+
   .date-picker {
     width: 322px;
     margin: 0 auto;
@@ -281,4 +345,5 @@
     flex-direction: column;
     background-color: var(--sdp-bg-color);
   }
+
 </style>

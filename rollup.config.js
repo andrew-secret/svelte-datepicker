@@ -27,7 +27,7 @@ export default {
 			preprocess: autoPreprocess(),
 			emitCss: false,
 			compilerOptions: {
-				hydratable: false
+				hydratable: false,
 			}
 		}),
 		scss(),

@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/svelte';
+import { defaultMaxDate, defaultMinDate } from '../../utils/date-default-ranges';
 import { dateFnsUtils } from '../../utils/date-fns-adapter';
 import DayPicker from './DayPicker.svelte';
 
@@ -12,6 +13,8 @@ describe('DayPicker', () => {
     const props = {
         dateAdapter: dateFnsUtils,
         fullMonth,
+        minDate: defaultMinDate,
+        maxDate: defaultMaxDate,
         selectedDates: [date],
         focusedDay: date,
         currentMonthNumber,

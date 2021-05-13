@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/svelte';
 import { enGB, fr, ru } from 'date-fns/locale';
+import { defaultMaxDate, defaultMinDate } from '../../utils/date-default-ranges';
 import { dateFnsUtils } from '../../utils/date-fns-adapter';
 import DatePickerHeader from './DatePickerHeader.svelte';
-import Picker from '../Picker.svelte';
 
 describe('DatePickerHeader', () => {
     beforeEach(() => {
@@ -14,6 +14,8 @@ describe('DatePickerHeader', () => {
     const datePickerHeaderProps = {
         dateAdapter: dateFnsUtils,
         currentMonth,
+        minDate: defaultMinDate,
+        maxDate: defaultMaxDate,
         selectPreviousMonth: jest.fn(),
         selectNextMonth: jest.fn(),
         toggleYearPicker: jest.fn(),
