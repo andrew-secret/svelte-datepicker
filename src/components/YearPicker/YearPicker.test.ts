@@ -1,11 +1,14 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent, waitFor } from '@testing-library/svelte';
+import { defaultMaxDate, defaultMinDate } from '../../utils/date-default-ranges';
 import { dateFnsUtils } from '../../utils/date-fns-adapter'
 import YearPicker from './YearPicker.svelte';
 
 describe('YearPicker', () => {
     const currentMonth = new Date('2021-01-04');
     const yearPickerProps = {
+        minDate: defaultMinDate,
+        maxDate: defaultMaxDate,
         dateAdapter: dateFnsUtils, 
         selectYear: jest.fn(), 
         currentMonth
@@ -77,7 +80,7 @@ describe('YearPicker', () => {
     it('should call selectYear fn', () => {
         const selectYearMock = jest.fn();
         const { getByText } = render(YearPicker, {
-            props: { dateAdapter: dateFnsUtils, selectYear: selectYearMock, currentMonth }
+            props: { ...yearPickerProps, selectYear: selectYearMock, currentMonth }
         });
         fireEvent.click(getByText('2025'));
 

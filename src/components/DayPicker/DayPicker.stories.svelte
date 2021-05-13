@@ -1,5 +1,9 @@
 <script lang="ts">
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import {
+    defaultMaxDate,
+    defaultMinDate,
+  } from "../../utils/date-default-ranges";
   import { dateFnsUtils } from "../../utils/date-fns-adapter";
   import DayPicker from "./DayPicker.svelte";
 
@@ -15,6 +19,8 @@
     fullMonth={dateFnsUtils.getWeekArray(currentMonth)}
     currentMonthNumber={dateFnsUtils.getMonth(currentMonth)}
     selectedDates={[date]}
+    minDate={defaultMinDate}
+    maxDate={defaultMaxDate}
     handleFocus={() => null}
     onDaySelect={() => null}
   />
