@@ -25,23 +25,48 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
+    "@date-io/date-fns": "^2.10.8",
+    "@date-io/dayjs": "^2.10.8",
+    "@date-io/luxon": "^2.10.8",
+    "@date-io/moment": "^2.10.8",
+    "moment": "^2.29.1",
     "date-fns": "^2.21.1",
+    "dayjs": "^1.10.4",
     "luxon": "^1.26.0"
   },
   "peerDependenciesMeta": {
     "date-fns": {
       "optional": true
     },
+    "@date-io/date-fns": {
+      "optional": true
+    },
     "dayjs": {
       "optional": true
     },
+    "@date-io/dayjs": {
+      "optional": true
+    },
     "luxon": {
+      "optional": true
+    },
+    "@date-io/luxon": {
+      "optional": true
+    },
+    "moment": {
+      "optional": true
+    },
+    "@date-io/moment": {
       "optional": true
     }
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "@date-io/date-fns": "^2.10.8",
+    "@date-io/dayjs": "^2.10.8",
+    "@date-io/luxon": "^2.10.8",
+    "@date-io/moment": "^2.10.8",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@rollup/plugin-typescript": "^8.2.1",
@@ -59,10 +84,12 @@
     "@types/testing-library__jest-dom": "^5.9.5",
     "babel-loader": "^8.1.0",
     "date-fns": "^2.21.2",
+    "dayjs": "^1.10.4",
     "del-cli": "^3.0.0",
     "eslint": "^7.6.0",
     "jest": "^26.6.3",
     "luxon": "^1.26.0",
+    "moment": "^2.29.1",
     "rollup": "^2.46.0",
     "rollup-plugin-filesize": "^9.1.1",
     "rollup-plugin-scss": "^2.6.1",
@@ -86,9 +113,6 @@
     "extends": "@sveltejs"
   },
   "dependencies": {
-    "@date-io/core": "^2.10.7",
-    "@date-io/date-fns": "^2.10.8",
-    "@date-io/luxon": "^2.10.8",
-    "@date-io/moment": "^2.10.8"
+    "@date-io/core": "^2.10.7"
   }
 }
