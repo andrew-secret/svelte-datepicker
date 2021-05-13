@@ -9,9 +9,9 @@
   import { writable } from "svelte/store";
   import { handleFocusTrap } from "../utils/focus-trap";
 
-  export let dateAdapter: IUtils<Date>;
+  export let dateAdapter: IUtils<any>;
   export let locale: string | object | undefined;
-  export let value = dateAdapter.date() as Date;
+  export let value: Date = dateAdapter.date();
   export let focusedDay = dateAdapter.date() as Date;
   export let minDate: Date = defaultMinDate;
   export let maxDate: Date = defaultMaxDate;
@@ -70,6 +70,13 @@
   async function handleKeyDown(event: KeyboardEvent) {
     const current = document.activeElement as HTMLElement;
 
+    /*
+      it's necessary to transform the minDate and maxDate
+      to ensure that it's compatible with all date adapters
+    */
+    const formattedMinDate = dateAdapter.date(minDate) as Date;
+    const formattedmaxDate = dateAdapter.date(maxDate) as Date;
+
     await tick();
     let items = [...datepicker.querySelectorAll('.day[aria-hidden="false"]')];
     const currentIndex = current ? items.indexOf(current) : 0;
@@ -95,15 +102,21 @@
     switch (event.key) {
       case "ArrowUp":
         const previousWeek = dateAdapter.addDays(focusedDay, -7);
-        const isWeekOutOfMinDateRange = dateAdapter.isSameMonth(
-          previousWeek,
-          dateAdapter.getPreviousMonth(minDate)
-        );
+
+        const isWeekOutOfMinDateRange =
+          formattedMinDate &&
+          dateAdapter.isSameMonth(
+            previousWeek,
+            dateAdapter.getPreviousMonth(formattedMinDate)
+          );
 
         // TODO This is a bad naming and has to be changed
         const isDayOutOfMinDateRange = !dateAdapter.isWithinRange(
           dateAdapter.startOfDay(previousWeek),
-          [dateAdapter.startOfDay(minDate), dateAdapter.startOfDay(maxDate)]
+          [
+            dateAdapter.startOfDay(formattedMinDate),
+            dateAdapter.startOfDay(formattedmaxDate),
+          ]
         );
 
         if (isWeekOutOfMinDateRange || isDayOutOfMinDateRange) {
@@ -114,7 +127,7 @@
         changeFocusedDay(dateAdapter.addDays(focusedDay, -7));
         if (needMonthSwitch) {
           /*
-            If you switch to the previous month the focus 
+            If you switch to the previous month the focus
             should be applied to the last day
           */
           await tick();
@@ -131,12 +144,15 @@
         const nextWeek = dateAdapter.addDays(focusedDay, 7);
         const isWeekOutOfMaxDateRange = dateAdapter.isSameMonth(
           nextWeek,
-          dateAdapter.getNextMonth(maxDate)
+          dateAdapter.getNextMonth(formattedmaxDate)
         );
 
         const isDayOutOfMaxDateRange = !dateAdapter.isWithinRange(
           dateAdapter.startOfDay(nextWeek),
-          [dateAdapter.startOfDay(minDate), dateAdapter.startOfDay(maxDate)]
+          [
+            dateAdapter.startOfDay(formattedMinDate),
+            dateAdapter.startOfDay(formattedmaxDate),
+          ]
         );
 
         if (isWeekOutOfMaxDateRange || isDayOutOfMaxDateRange) {
@@ -157,7 +173,7 @@
         break;
       case "ArrowLeft":
         // TODO this early return needs to be in sync with minDate and the disbaled button in the daypicker
-        if (dateAdapter.isSameDay(focusedDay, minDate)) {
+        if (dateAdapter.isSameDay(focusedDay, formattedMinDate)) {
           return;
         }
 
@@ -180,7 +196,7 @@
         event.preventDefault();
         break;
       case "ArrowRight":
-        if (dateAdapter.isSameDay(focusedDay, maxDate)) {
+        if (dateAdapter.isSameDay(focusedDay, formattedmaxDate)) {
           return;
         }
 
