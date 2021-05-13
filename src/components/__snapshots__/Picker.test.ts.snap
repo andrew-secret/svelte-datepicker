@@ -4,7 +4,7 @@ exports[`Picker should render w/ day picker 1`] = `
 <body>
   <div>
     <div
-      class="date-picker svelte-1yf8vyi"
+      class="date-picker svelte-1gjmd48"
     >
       <div
         class="datepicker-header svelte-gpn5i8"
@@ -690,7 +690,7 @@ exports[`Picker should render w/ year picker 1`] = `
 <body>
   <div>
     <div
-      class="date-picker svelte-1yf8vyi"
+      class="date-picker svelte-1gjmd48"
     >
       <div
         class="datepicker-header svelte-gpn5i8"
