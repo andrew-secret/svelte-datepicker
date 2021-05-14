@@ -10,7 +10,9 @@
   "keywords": [
     "svelte",
     "typescript",
-    "accessibility"
+    "accessibility",
+    "date",
+    "picker"
   ],
   "homepage": "https://github.com/andrew-secret/svelte-datepicker",
   "repository": {
