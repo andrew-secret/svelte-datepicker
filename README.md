@@ -27,8 +27,11 @@ Just keep in mind that this is still a alpha version and things might change ove
 **Install date management library and the corresponding `date-io` adapter via [npm](https://github.com/npm/cli):**
 
 ```bash
-# your date management library of choice and date adapter (e.g. @date-io/<your-date-management-library>)
-npm install date-fns && @date-io/date-fns
+# your date management library of choice
+npm install date-fns
+
+# date adapter (e.g. @date-io/<your-date-management-library>)
+npm install @date-io/date-fns
 ```
 
 **Install svelte date picker and via [npm](https://github.com/npm/cli):**
