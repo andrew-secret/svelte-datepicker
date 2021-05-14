@@ -1,5 +1,5 @@
 {
-  "name": "svelte-datepicker",
+  "name": "svelte-inclusive-datepicker",
   "version": "0.1.0-alpha.0",
   "author": "André Rusakow",
   "description": "accessible date picker for Svelte",
