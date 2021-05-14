@@ -1,7 +1,6 @@
 ![svelte inclusive datepicker](./datepicker-cover.png)
 
-![example branch parameter](https://github.com/andrew-secret/svelte-datepicker/actions/workflows/ci.yml/badge.svg?branch=feature-1)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/andrew-secret/svelte-datepicker/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/andrew-secret/svelte-inclusive-datepicker/blob/main/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
@@ -34,8 +33,8 @@ npm install date-fns && @date-io/date-fns
 **Install svelte date picker and via [npm](https://github.com/npm/cli):**
 
 ```bash
-# install svelte-datepicker with alpha
-npm install svelte-datepicker@alpha
+# install svelte-inclusive-datepicker with alpha
+npm install svelte-inclusive-datepicker@alpha
 ```
 
 ## Usage
@@ -46,7 +45,7 @@ Now we have to important the **DatePicker** component and a **dateAdapter** whic
 <!-- App.svelte -->
 <script>
   import DateFnsAdapter from "@date-io/date-fns";
-  import { DatePicker } from "svelte-datepicker";
+  import { DatePicker } from "svelte-inclusive-datepicker";
 
   const dateFnsAdapter = new DateFnsAdapter();
 
@@ -230,7 +229,7 @@ Localization relies on the date management library of your choice. Therefore I w
 <script>
   import DateFnsAdapter from "@date-io/date-fns";
   import fr from "date-fns/locale/fr";
-  import { DatePicker } from "svelte-datepicker";
+  import { DatePicker } from "svelte-inclusive-datepicker";
 
   const dateFnsAdapter = new DateFnsAdapter();
 
@@ -255,7 +254,7 @@ Localization relies on the date management library of your choice. Therefore I w
 <!-- App.svelte -->
 <script>
   import DayJsAdapter from "@date-io/moment";
-  import { DatePicker } from "svelte-datepicker";
+  import { DatePicker } from "svelte-inclusive-datepicker";
   import moment from "moment";
 
   const dayJsAdapter = new DayJsAdapter();
@@ -281,7 +280,7 @@ Localization relies on the date management library of your choice. Therefore I w
 <!-- App.svelte -->
 <script>
   import LuxonAdapter from "@date-io/luxon";
-  import { DatePicker } from "svelte-datepicker";
+  import { DatePicker } from "svelte-inclusive-datepicker";
 
   const luxonAdapter = new LuxonAdapter();
 
@@ -306,7 +305,7 @@ Localization relies on the date management library of your choice. Therefore I w
   <!-- App.svelte -->
 <script>
   import DayjsAdapter from "@date-io/dayjs"
-  import { DatePicker } from "svelte-datepicker";
+  import { DatePicker } from "svelte-inclusive-datepicker";
   import "dayjs/locale/fr";
   import dayjs from "dayjs"
 
