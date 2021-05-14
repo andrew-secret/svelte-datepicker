@@ -89,6 +89,7 @@
       (selectedYear[0] as HTMLElement).focus();
     }
   });
+
 </script>
 
 <div
@@ -115,14 +116,13 @@
 
 <style lang="scss">
   .year-picker {
-    height: 100%;
+    height: 322px;
     padding: 0 4px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .year-button {
@@ -143,6 +143,12 @@
     background-color: transparent;
     border-radius: var(--sdp-border-radius);
     transition: background-color 200ms ease-in-out;
+
+    margin-right: 5px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:hover {
       color: var(--sdp-hover-color);
@@ -170,4 +176,5 @@
         inset 0 0 0 0.1rem var(--sdp-bg-color);
     }
   }
+
 </style>

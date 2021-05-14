@@ -24,11 +24,18 @@ Just keep in mind that this is still a alpha version and things might change ove
   - [`luxon`](https://www.npmjs.com/package/luxon)
   - [`moment`](https://www.npmjs.com/package/moment)
 
-The package can be installed via [npm](https://github.com/npm/cli):
+**Install date management library and the corresponding `date-io` adapter via [npm](https://github.com/npm/cli):**
 
 ```bash
-# install svelte-datepicker with alpha dist-tag and date adapter (e.g. @date-io/<your-date-management-library>)
-npm install svelte-datepicker@alpha && @date-io/date-fns
+# your date management library of choice and date adapter (e.g. @date-io/<your-date-management-library>)
+npm install date-fns && @date-io/date-fns
+```
+
+**Install svelte date picker and via [npm](https://github.com/npm/cli):**
+
+```bash
+# install svelte-datepicker with alpha
+npm install svelte-datepicker@alpha
 ```
 
 ## Usage
@@ -50,13 +57,11 @@ Now we have to important the **DatePicker** component and a **dateAdapter** whic
   }
 </script>
 
-<main>
-  <DatePicker
-    {value}
-    dateAdapter={dateFnsAdapter}
-    on:selectDay={handleSelectDay}
-  />
-</main>
+<DatePicker
+  {value}
+  dateAdapter={dateFnsAdapter}
+  on:selectDay={handleSelectDay}
+/>
 ```
 
 ## Properties
@@ -216,7 +221,118 @@ This approach looks pretty neat, but it hast two main limiations regarding styli
 
 ## Localization
 
-TODO: describe localization
+Localization relies on the date management library of your choice. Therefore I will show three example for `date-fns`, `moment` and `luxon` of how to localize the svelte date picker. If you want to advance your configuration I advise you to read the documentation of the corrensponding date mangement library.
+
+### Localization with `date-fns`
+
+```svelte
+<!-- App.svelte -->
+<script>
+  import DateFnsAdapter from "@date-io/date-fns";
+  import fr from "date-fns/locale/fr";
+  import { DatePicker } from "svelte-datepicker";
+
+  const dateFnsAdapter = new DateFnsAdapter();
+
+  let value = dateFnsAdapter.date();
+
+  function handleSelectDay(e) {
+    value = e.detail;
+  }
+</script>
+
+<DatePicker
+  {value}
+  locale={fr}
+  dateAdapter={dateFnsAdapter}
+  on:selectDay={handleSelectDay}
+/>
+```
+
+### Localization with `moment`
+
+```svelte
+<!-- App.svelte -->
+<script>
+  import DayJsAdapter from "@date-io/moment";
+  import { DatePicker } from "svelte-datepicker";
+  import moment from "moment";
+
+  const dayJsAdapter = new DayJsAdapter();
+
+  let value = dayJsAdapter.date();
+
+  function handleSelectDay(e) {
+    value = e.detail;
+  }
+</script>
+
+<DatePicker
+  {value}
+  locale="fr"
+  dateAdapter={dayJsAdapter}
+  on:selectDay={handleSelectDay}
+/>
+```
+
+### Localization with `luxon`
+
+```svelte
+<!-- App.svelte -->
+<script>
+  import LuxonAdapter from "@date-io/luxon";
+  import { DatePicker } from "svelte-datepicker";
+
+  const luxonAdapter = new LuxonAdapter();
+
+  let value = luxonAdapter.date();
+
+  function handleSelectDay(e) {
+    value = e.detail;
+  }
+</script>
+
+<DatePicker
+  {value}
+  locale="fr"
+  dateAdapter={luxonAdapter}
+  on:selectDay={handleSelectDay}
+/>
+```
+
+### Localization with `dayjs`
+
+```svelte
+  <!-- App.svelte -->
+<script>
+  import DayjsAdapter from "@date-io/dayjs"
+  import { DatePicker } from "svelte-datepicker";
+  import "dayjs/locale/fr";
+  import dayjs from "dayjs"
+
+  dayjs.locale("de");
+  const dayJsAdapter = new DayJsAdapter();
+
+  let value = dayJsAdapter.date();
+
+  function handleSelectDay(e) {
+    value = e.detail;
+  }
+</script>
+
+<DatePicker
+  {value}
+  dateAdapter={dayJsAdapter}
+  on:selectDay={dayJsAdapter}
+/>
+```
+
+For further information, take a look at the documentation of the corresponding date management library:
+
+- [date-fns](https://date-fns.org/v2.21.3/docs/I18n)
+- [moment](https://momentjs.com/docs/#/i18n/)
+- [luxon](https://moment.github.io/luxon/docs/manual/intl.html)
+- [dayjs](https://day.js.org/docs/en/i18n/i18n)
 
 ## Browser Support
 
