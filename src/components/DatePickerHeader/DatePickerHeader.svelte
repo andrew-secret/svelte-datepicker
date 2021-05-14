@@ -166,6 +166,11 @@
       outline: none;
       box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
     }
+
+    &:disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
   }
 
   .previous-month {
@@ -178,8 +183,8 @@
   }
 
   .month-switcher-label {
-    display: flex;
     width: 20px;
+    height: 20px;
   }
 
 </style>

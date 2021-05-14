@@ -123,7 +123,6 @@
     flex-wrap: wrap;
     overflow-y: auto;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .year-button {
@@ -144,6 +143,12 @@
     background-color: transparent;
     border-radius: var(--sdp-border-radius);
     transition: background-color 200ms ease-in-out;
+
+    margin-right: 5px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:hover {
       color: var(--sdp-hover-color);
