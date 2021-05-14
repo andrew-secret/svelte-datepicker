@@ -89,6 +89,7 @@
       (selectedYear[0] as HTMLElement).focus();
     }
   });
+
 </script>
 
 <div
@@ -115,7 +116,7 @@
 
 <style lang="scss">
   .year-picker {
-    height: 100%;
+    height: 322px;
     padding: 0 4px;
     box-sizing: border-box;
     display: flex;
@@ -170,4 +171,5 @@
         inset 0 0 0 0.1rem var(--sdp-bg-color);
     }
   }
+
 </style>

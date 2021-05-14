@@ -33,6 +33,7 @@
     }
     return -1;
   }
+
 </script>
 
 <div class="weekdays">
@@ -86,6 +87,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 42px;
+  }
+
+  div[role="grid"] {
+    height: 280px;
   }
 
   .weekday-label {
@@ -171,4 +177,5 @@
       box-shadow: inset 0 0 0 0.15rem var(--sdp-bg-focus-color);
     }
   }
+
 </style>

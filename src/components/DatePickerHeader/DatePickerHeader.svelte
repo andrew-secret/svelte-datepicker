@@ -16,6 +16,7 @@
 
   $: shouldDisableMinDate = dateAdapter.isSameMonth(currentMonth, minDate);
   $: shouldDisableMaxDate = dateAdapter.isSameMonth(currentMonth, maxDate);
+
 </script>
 
 <div class="datepicker-header">
@@ -104,7 +105,9 @@
   .datepicker-header {
     display: flex;
     justify-content: space-between;
+    height: 50px;
     padding: 4px 0;
+    box-sizing: border-box;
   }
 
   .year-switcher-wrapper {
@@ -178,4 +181,5 @@
     display: flex;
     width: 20px;
   }
+
 </style>
