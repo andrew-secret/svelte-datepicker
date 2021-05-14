@@ -1,3 +1,10 @@
+# [1.0.0-alpha.2](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-05-14)
+
+
+### Bug Fixes
+
+* remove ci badge for now and trigger alpha release 😇 ([50a2241](https://github.com/andrew-secret/svelte-datepicker/commit/50a2241617bb635433c17643f5aef56db7be86e5))
+
 # 1.0.0-alpha.1 (2021-05-14)
 
 
