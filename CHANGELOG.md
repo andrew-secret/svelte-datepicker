@@ -1,3 +1,10 @@
+# [1.0.0-alpha.3](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-05-14)
+
+
+### Bug Fixes
+
+* enable hydration mode ([e3c5c90](https://github.com/andrew-secret/svelte-datepicker/commit/e3c5c90b34c2c9652210f32a3ac311cf5c34b3fc))
+
 # [1.0.0-alpha.2](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-05-14)
 
 
