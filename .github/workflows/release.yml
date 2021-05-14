@@ -1,10 +1,11 @@
 name: Release
 on:
-  workflow_run:
-    workflows: ["CI"]
-    branches: [main]
-    types:
-      - completed
+  push:
+    branches:
+      - main
+      - alpha
+      - beta
+      - next
 
 jobs:
   release:
@@ -23,8 +24,25 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      # - name: Release
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #   run: npx semantic-release
+
+      - name: semantic-release-prerequisites
+        run: |
+          npm install --no-package-lock --no-save \
+            @semantic-release/commit-analyzer \
+            @semantic-release/release-notes-generator \
+            @semantic-release/changelog \
+            @semantic-release/npm \
+            @semantic-release/github \
+            @semantic-release/git
+
+      - name: semantic-release-dry-run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release --dry-run
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
