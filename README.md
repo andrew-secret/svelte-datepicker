@@ -1,6 +1,5 @@
 ![svelte inclusive datepicker](./datepicker-cover.png)
 
-![example branch parameter](https://github.com/andrew-secret/svelte-inclusive-datepicker/actions/workflows/ci.yml/badge.svg?branch=feature-1)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/andrew-secret/svelte-inclusive-datepicker/blob/main/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
