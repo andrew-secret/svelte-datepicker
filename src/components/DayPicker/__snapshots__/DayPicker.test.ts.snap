@@ -4,52 +4,52 @@ exports[`DayPicker should render component 1`] = `
 <body>
   <div>
     <div
-      class="weekdays svelte-2n44di"
+      class="weekdays svelte-ie0jw4"
     >
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Su"
       >
         Su
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Mo"
       >
         Mo
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Tu"
       >
         Tu
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="We"
       >
         We
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Th"
       >
         Th
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Fr"
       >
         Fr
          
       </span>
       <span
-        class="weekday-label svelte-2n44di"
+        class="weekday-label svelte-ie0jw4"
         title="Sa"
       >
         Sa
@@ -58,10 +58,11 @@ exports[`DayPicker should render component 1`] = `
     </div>
      
     <div
+      class="svelte-ie0jw4"
       role="grid"
     >
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -70,7 +71,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Sun Dec 27 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -84,7 +85,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Mon Dec 28 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -98,7 +99,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Tue Dec 29 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -112,7 +113,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Wed Dec 30 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -126,7 +127,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Thu Dec 31 2020 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -140,7 +141,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Fri Jan 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -154,7 +155,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sat Jan 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -165,7 +166,7 @@ exports[`DayPicker should render component 1`] = `
          
       </div>
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -174,7 +175,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sun Jan 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -189,7 +190,7 @@ exports[`DayPicker should render component 1`] = `
             aria-hidden="false"
             aria-label="Mon Jan 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
             autofocus=""
-            class="day svelte-2n44di selected"
+            class="day svelte-ie0jw4 selected"
             data-testid="visible-day"
             tabindex="0"
             type="button"
@@ -203,7 +204,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Tue Jan 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -217,7 +218,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Wed Jan 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -231,7 +232,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Thu Jan 07 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -245,7 +246,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Fri Jan 08 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -259,7 +260,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sat Jan 09 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -270,7 +271,7 @@ exports[`DayPicker should render component 1`] = `
          
       </div>
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -279,7 +280,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sun Jan 10 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -293,7 +294,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Mon Jan 11 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -307,7 +308,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Tue Jan 12 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -321,7 +322,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Wed Jan 13 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -335,7 +336,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Thu Jan 14 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -349,7 +350,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Fri Jan 15 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -363,7 +364,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sat Jan 16 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -374,7 +375,7 @@ exports[`DayPicker should render component 1`] = `
          
       </div>
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -383,7 +384,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sun Jan 17 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -397,7 +398,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Mon Jan 18 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -411,7 +412,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Tue Jan 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -425,7 +426,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Wed Jan 20 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -439,7 +440,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Thu Jan 21 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -453,7 +454,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Fri Jan 22 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -467,7 +468,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sat Jan 23 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -478,7 +479,7 @@ exports[`DayPicker should render component 1`] = `
          
       </div>
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -487,7 +488,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sun Jan 24 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -501,7 +502,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Mon Jan 25 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -515,7 +516,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Tue Jan 26 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -529,7 +530,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Wed Jan 27 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -543,7 +544,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Thu Jan 28 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -557,7 +558,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Fri Jan 29 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -571,7 +572,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sat Jan 30 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -582,7 +583,7 @@ exports[`DayPicker should render component 1`] = `
          
       </div>
       <div
-        class="week svelte-2n44di"
+        class="week svelte-ie0jw4"
         role="row"
       >
         <div
@@ -591,7 +592,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="false"
             aria-label="Sun Jan 31 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di"
+            class="day svelte-ie0jw4"
             data-testid="visible-day"
             tabindex="-1"
             type="button"
@@ -605,7 +606,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Mon Feb 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -619,7 +620,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Tue Feb 02 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -633,7 +634,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Wed Feb 03 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -647,7 +648,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Thu Feb 04 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -661,7 +662,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Fri Feb 05 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"
@@ -675,7 +676,7 @@ exports[`DayPicker should render component 1`] = `
           <button
             aria-hidden="true"
             aria-label="Sat Feb 06 2021 00:00:00 GMT+0000 (Coordinated Universal Time)"
-            class="day svelte-2n44di outside-of-current-month"
+            class="day svelte-ie0jw4 outside-of-current-month"
             data-testid="hidden-day"
             tabindex="-1"
             type="button"

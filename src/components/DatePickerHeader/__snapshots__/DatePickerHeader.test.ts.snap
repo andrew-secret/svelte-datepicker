@@ -4,14 +4,14 @@ exports[`DatePickerHeader should render component 1`] = `
 <body>
   <div>
     <div
-      class="datepicker-header svelte-gpn5i8"
+      class="datepicker-header svelte-18t5wxc"
     >
       <div
-        class="year-switcher-wrapper svelte-gpn5i8"
+        class="year-switcher-wrapper svelte-18t5wxc"
       >
         <time
           aria-live="polite"
-          class="year-switcher-label svelte-gpn5i8"
+          class="year-switcher-label svelte-18t5wxc"
           data-testid="selected-month"
           datetime="4 Jan 2021"
         >
@@ -20,7 +20,7 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <time
           aria-live="polite"
-          class="year-switcher-label svelte-gpn5i8"
+          class="year-switcher-label svelte-18t5wxc"
           data-testid="selected-year"
           datetime="4 Jan 2021"
         >
@@ -29,12 +29,12 @@ exports[`DatePickerHeader should render component 1`] = `
          
         <button
           aria-pressed="false"
-          class="month-switcher svelte-gpn5i8"
+          class="month-switcher svelte-18t5wxc"
           data-testid="expand-button"
           type="button"
         >
           <span
-            class="month-switcher-label svelte-gpn5i8"
+            class="month-switcher-label svelte-18t5wxc"
           >
             <svg
               aria-hidden="true"
