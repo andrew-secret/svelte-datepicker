@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "André Rusakow",
   "description": "accessible date picker for Svelte",
-  "svelte": "src/index.js",
+  "svelte": "dist/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "license": "MIT",
@@ -132,8 +132,7 @@
     "@testing-library/jest-dom/extend-expect"
   ],
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "eslintConfig": {
     "extends": "@sveltejs"
