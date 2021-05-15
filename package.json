@@ -1,9 +1,9 @@
 {
   "name": "svelte-inclusive-datepicker",
-  "version": "0.1.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "André Rusakow",
   "description": "accessible date picker for Svelte",
-  "svelte": "dist/index.js",
+  "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "license": "MIT",
@@ -31,10 +31,10 @@
     "@date-io/dayjs": "^2.10.8",
     "@date-io/luxon": "^2.10.8",
     "@date-io/moment": "^2.10.8",
-    "moment": "^2.29.1",
     "date-fns": "^2.21.1",
     "dayjs": "^1.10.4",
-    "luxon": "^1.26.0"
+    "luxon": "^1.26.0",
+    "moment": "^2.29.1"
   },
   "peerDependenciesMeta": {
     "date-fns": {
@@ -61,6 +61,29 @@
     "@date-io/moment": {
       "optional": true
     }
+  },
+  "release": {
+    "defaultBranch": "alpha",
+    "branches": [
+      "main",
+      "next",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -109,7 +132,8 @@
     "@testing-library/jest-dom/extend-expect"
   ],
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "eslintConfig": {
     "extends": "@sveltejs"

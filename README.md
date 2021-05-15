@@ -1,6 +1,5 @@
 ![svelte inclusive datepicker](./datepicker-cover.png)
 
-![example branch parameter](https://github.com/andrew-secret/svelte-inclusive-datepicker/actions/workflows/ci.yml/badge.svg?branch=feature-1)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/andrew-secret/svelte-inclusive-datepicker/blob/main/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
@@ -10,6 +9,8 @@
 A lightweight and inclusive date picker build with svelte. Do you already use a specific date library in your project? That's fine! You can decide which date management library you want to use. It supports `date-fns`, `dayjs`, `luxon` and `moment` (even though its in maintenance mode now). The current implementation contains a day and year picker without inputs or modals. This project uses `date-io` as an abstraction over common date management libraries. That makes this component more convenient for consumers that are already using a specific date management library.
 
 Just keep in mind that this is still a alpha version and things might change over time. 🏗
+
+**[DEMO](https://svelte.dev/repl/9f8542d4ef354b88895bc827fabdc18f?version=3.38.2)**
 
 ## Prerequisites
 
@@ -356,6 +357,9 @@ npm run storybook
 
 # build
 npm run build
+
+# test
+npm run test:watch
 ```
 
 ### Upcoming Features
