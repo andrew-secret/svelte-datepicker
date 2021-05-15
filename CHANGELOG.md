@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.0...v1.0.1) (2021-05-15)
+
+
+### Bug Fixes
+
+* remove src from files and point to index js in dist ([40e4fe5](https://github.com/andrew-secret/svelte-datepicker/commit/40e4fe5c42fa3a13a66a20cc03693bb5638026c3))
+
 # 1.0.0 (2021-05-15)
 
 
