@@ -357,6 +357,9 @@ npm run storybook
 
 # build
 npm run build
+
+# test
+npm run test:watch
 ```
 
 ### Upcoming Features

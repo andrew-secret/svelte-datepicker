@@ -63,6 +63,7 @@
     }
   },
   "release": {
+    "defaultBranch": "alpha",
     "branches": [
       "main",
       "next",
