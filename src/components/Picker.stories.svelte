@@ -1,13 +1,14 @@
 <script lang="ts">
   import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
   import { dateFnsUtils } from "../utils/date-fns-adapter";
-  import Picker from "./Picker.svelte";
+  import DatePicker from "./DatePicker.svelte";
 
   export let value = dateFnsUtils.date();
   export let value2 = dateFnsUtils.date();
+
 </script>
 
-<Meta title="Example/Picker" component={Picker} />
+<Meta title="Example/DatePicker" component={DatePicker} />
 
 <Template>
   <section>
@@ -15,7 +16,7 @@
     <strong>Well actually it's a focus trap...</strong>
     <a href="/">a really useless link</a>
     <time>{value}</time>
-    <Picker
+    <DatePicker
       {value}
       dateAdapter={dateFnsUtils}
       minDate={new Date("2020-05-05")}
@@ -30,7 +31,7 @@
     <label for="something">Something</label>
     <input name="something" type="text" />
 
-    <Picker
+    <DatePicker
       dateAdapter={dateFnsUtils}
       value={value2}
       on:selectDay={(e) => {
@@ -53,4 +54,5 @@
   * + * {
     margin-bottom: 20px;
   }
+
 </style>

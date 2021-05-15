@@ -2,7 +2,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent, screen, waitFor, createEvent } from '@testing-library/svelte';
 import { enUS } from 'date-fns/locale';
 import { dateFnsUtils } from '../utils/date-fns-adapter'
-import Picker from './Picker.svelte';
+import DatePicker from './DatePicker.svelte';
 
 describe('Picker', () => {
     const value = new Date('2021-04-30');
@@ -14,13 +14,13 @@ describe('Picker', () => {
     }
 
     it('should render w/ day picker', () => {
-        const { container } = render(Picker, props);
+        const { container } = render(DatePicker, props);
 
         expect(container).toMatchSnapshot();
     });
 
     it('should render w/ year picker', async () => {
-        const { container } = render(Picker, props);
+        const { container } = render(DatePicker, props);
         const expandButton = screen.getByTestId('expand-button');
         await waitFor(() => fireEvent.click(expandButton));
 
@@ -30,7 +30,7 @@ describe('Picker', () => {
     
     describe('click events', () => {
         it('should select day wihtin the current month', async () => {
-            const { container } = render(Picker, props);
+            const { container } = render(DatePicker, props);
             const secondAprilButton = screen.getByText('2');
 
             const date = new Date('2021-04-02');
