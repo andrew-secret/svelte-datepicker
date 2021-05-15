@@ -10,6 +10,8 @@ A lightweight and inclusive date picker build with svelte. Do you already use a 
 
 Just keep in mind that this is still a alpha version and things might change over time. 🏗
 
+**[DEMO](https://svelte.dev/repl/9f8542d4ef354b88895bc827fabdc18f?version=3.38.2)**
+
 ## Prerequisites
 
 - Download and install latest Version of [NodeJS](https://nodejs.org/en/) (`>=14.16.x`). If node was installed via [Homebrew](https://brew.sh/) you just need to update it.
