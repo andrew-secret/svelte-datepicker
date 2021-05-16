@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.1...v1.0.2) (2021-05-16)
+
+
+### Bug Fixes
+
+* exclude test files ([64accf4](https://github.com/andrew-secret/svelte-datepicker/commit/64accf40314de9f34e12d82ff4e42a71735efc07))
+
 ## [1.0.1](https://github.com/andrew-secret/svelte-datepicker/compare/v1.0.0...v1.0.1) (2021-05-15)
 
 
