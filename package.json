@@ -92,7 +92,7 @@
     "@date-io/dayjs": "^2.10.8",
     "@date-io/luxon": "^2.10.8",
     "@date-io/moment": "^2.10.8",
-    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
     "@storybook/addon-actions": "^6.2.9",
